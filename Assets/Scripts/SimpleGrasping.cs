@@ -28,11 +28,11 @@ public class SimpleGrasping : MonoBehaviour
 
         if (gloveHandler != null)
         {
-            if (gloveHandler.whichHand == "LargeLeft")
+            if (gloveHandler.whichHand == HaptGloveHandler.HandType.Left)
             {
                 fingerList = fingerLeftList;
             }
-            else if (gloveHandler.whichHand == "LargeRight")
+            else if (gloveHandler.whichHand == HaptGloveHandler.HandType.Right)
             {
                 fingerList = fingerRightList;
             }
@@ -79,11 +79,11 @@ public class SimpleGrasping : MonoBehaviour
 
         if (gloveHandler != null)
         {
-            if (gloveHandler.whichHand == "LargeLeft")
+            if (gloveHandler.whichHand == HaptGloveHandler.HandType.Left)
             {
                 fingerList = fingerLeftList;
             }
-            else if (gloveHandler.whichHand == "LargeRight")
+            else if (gloveHandler.whichHand == HaptGloveHandler.HandType.Right)
             {
                 fingerList = fingerRightList;
             }

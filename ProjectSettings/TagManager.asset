@@ -21,18 +21,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - Hand1
-  - GhostHand1
+  - Hand
+  - GhostHand
   - HaptGloveInteractable
-  - Tracker
-  - MotionConstrain
-  - Tumor
-  - Avatar1
-  - Hand2
-  - GhostHand2
-  - Avatar2
   - 
   - 
   - 
@@ -46,7 +37,16 @@ TagManager:
   - 
   - 
   - 
-  - Spatial Awareness
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0

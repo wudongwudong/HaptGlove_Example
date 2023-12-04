@@ -6,12 +6,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using Microsoft.MixedReality.Toolkit.Input;
-using Microsoft.MixedReality.Toolkit.Utilities;
+//using Microsoft.MixedReality.Toolkit.Input;
+//using Microsoft.MixedReality.Toolkit.Utilities;
 using UnityEngine.XR.OpenXR.Input;
 
 public class PhysicsHandTracking : MonoBehaviour
 {
+    public enum HandType
+    {
+        Left,
+        Right
+    };
+
+    public HandType handType;
     private string hand;
     private string hand_Short;
     private Transform[] targetJoints = new Transform[26];
@@ -22,13 +29,13 @@ public class PhysicsHandTracking : MonoBehaviour
     private Quaternion targeRotation = new Quaternion();
     private Rigidbody rb;
 
-    public bool leftHand;
+    //public bool leftHand;
     private Vector3 rotOffsetPalm = new Vector3(0, 0, 0);
     private Vector3 rotOffsetFinger = new Vector3(0, 0, 0);
 
     void Start()
     {
-        if (leftHand)
+        if (handType == HandType.Left)
         {
             hand = "Left";
             hand_Short = "L";

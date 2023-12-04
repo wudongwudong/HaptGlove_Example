@@ -142,7 +142,7 @@ public class Balloon_PneuClutch : MonoBehaviour
             gloveHandler = gameObject.GetComponent<HapMaterial>().graspedHand.GetComponent<HaptGloveHandler>();
             graspingScript = gloveHandler.gameObject.GetComponent<Grasping>();
             handTracking = gloveHandler.gameObject.GetComponent<PhysicsHandTracking>();
-            if (gloveHandler.whichHand == "Left")
+            if (gloveHandler.whichHand == HaptGloveHandler.HandType.Left)
                 handedness = "Left";
             else
                 handedness = "Right";

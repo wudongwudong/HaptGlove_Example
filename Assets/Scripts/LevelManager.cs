@@ -28,22 +28,22 @@ public class LevelManager : MonoBehaviour
 #if !UNITY_ANDROID
             LargeLeft.AddComponent<HaptGloveHandler>().deviceName = "HaptGloveAR L Left";
             //LargeLeft.AddComponent<FingerMapping_Left>();
-            LargeLeft.AddComponent<HaptGloveHandler>().whichHand = "LargeLeft";
+            LargeLeft.AddComponent<HaptGloveHandler>().whichHand = HaptGloveHandler.HandType.Left;
             LargeLeft.AddComponent<Grasping>();
 
             MediumLeft.AddComponent<HaptGloveHandler>().deviceName = "PneuHapGlove M Left";
             //MediumLeft.AddComponent<FingerMapping_Left>();
-            MediumLeft.AddComponent<HaptGloveHandler>().whichHand = "MediumLeft";
+            MediumLeft.AddComponent<HaptGloveHandler>().whichHand = HaptGloveHandler.HandType.Left;
             MediumLeft.AddComponent<Grasping>();
 
             LargeRight.AddComponent<HaptGloveHandler>().deviceName = "PneuHapGlove L Right";
             //LargeRight.AddComponent<FingerMapping_Left>();
-            LargeRight.AddComponent<HaptGloveHandler>().whichHand = "LargeRight";
+            LargeRight.AddComponent<HaptGloveHandler>().whichHand = HaptGloveHandler.HandType.Right;
             LargeRight.AddComponent<Grasping>();
 
             MediumRight.AddComponent<HaptGloveHandler>().deviceName = "PneuHapGlove M Right";
             //MediumRight.AddComponent<FingerMapping_Left>();
-            MediumRight.AddComponent<HaptGloveHandler>().whichHand = "MediumRight";
+            MediumRight.AddComponent<HaptGloveHandler>().whichHand = HaptGloveHandler.HandType.Right;
             MediumRight.AddComponent<Grasping>();
 
 #else

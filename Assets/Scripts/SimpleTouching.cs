@@ -31,11 +31,11 @@ public class SimpleTouching : MonoBehaviour
 
         if (gloveHandler != null)
         {
-            if (gloveHandler.whichHand == "Left")
+            if (gloveHandler.whichHand == HaptGloveHandler.HandType.Left)
             {
                 fingerList = fingerLeftList;
             }
-            else if (gloveHandler.whichHand == "Right")
+            else if (gloveHandler.whichHand == HaptGloveHandler.HandType.Right)
             {
                 fingerList = fingerRightList;
             }
@@ -100,11 +100,11 @@ public class SimpleTouching : MonoBehaviour
 
         if (gloveHandler != null)
         {
-            if (gloveHandler.whichHand == "Left")
+            if (gloveHandler.whichHand == HaptGloveHandler.HandType.Left)
             {
                 fingerList = fingerLeftList;
             }
-            else if (gloveHandler.whichHand == "Right")
+            else if (gloveHandler.whichHand == HaptGloveHandler.HandType.Right)
             {
                 fingerList = fingerRightList;
             }
