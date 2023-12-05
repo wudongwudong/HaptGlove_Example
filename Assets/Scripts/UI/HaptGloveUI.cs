@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using HaptGlove;
@@ -13,12 +14,19 @@ public class HaptGloveUI : MonoBehaviour
 
     public List<string> controlledHandsList = new List<string>();
 
-    public TMP_Text log, send_Log;
+    public TMP_Text log;
 
     void Update()
     {
-        log.text = handRight.GetComponent<HaptGloveHandler>().btText;
-        send_Log.text = handRight.GetComponent<HaptGloveHandler>().btSendText;
+        if (log != null)
+        {
+            log.text = handRight.GetComponent<HaptGloveHandler>().btText;
+        }
+        else
+        {
+            Debug.Log("HaptGloveUI: No TMP object is assigned to log");
+        }
+        
     }
 
     public void UI_Actions(string name)
@@ -51,25 +59,6 @@ public class HaptGloveUI : MonoBehaviour
                 break;
             case "ButtonHandMesh":
                 HandMeshButtonOnClick();
-                break;
-
-            case "ButtonClearLog":
-                ClearLogButtonOnClick();
-                break;
-            case "Button1ms":
-                StartCoroutine(DelayTesing(0f));
-                break;
-            case "Button10ms":
-                StartCoroutine(DelayTesing(0.001f));
-                break;
-            case "Button20ms":
-                StartCoroutine(DelayTesing(0.014f));
-                break;
-            case "Button30ms":
-                StartCoroutine(DelayTesing(0.026f));
-                break;
-            case "Button40ms":
-                StartCoroutine(DelayTesing(0.04f));
                 break;
         }
     }
@@ -106,21 +95,6 @@ public class HaptGloveUI : MonoBehaviour
         }
     }
 
-    IEnumerator DelayTesing(float t)
-    {
-        if (t == 0) 
-        {
-            handRight.GetComponent<HaptGloveHandler>().BTSend(new byte[] { 0x06, 0x02, 0x01, 0x01, 0x01, 0x41 });
-            handRight.GetComponent<HaptGloveHandler>().BTSend(new byte[] { 0x06, 0x02, 0x01, 0x00, 0x01, 0x41 });
-        }
-        else
-        {
-            handRight.GetComponent<HaptGloveHandler>().BTSend(new byte[] { 0x06, 0x02, 0x01, 0x01, 0x01, 0x41 });
-            yield return new WaitForSeconds(t);
-            handRight.GetComponent<HaptGloveHandler>().BTSend(new byte[] { 0x06, 0x02, 0x01, 0x00, 0x01, 0x41 });
-        }
-        
-    }
 
     private void ExButtonOnClick()
     {
@@ -183,9 +157,4 @@ public class HaptGloveUI : MonoBehaviour
 
     }
 
-    private void ClearLogButtonOnClick()
-    {
-        handLeft.GetComponent<HaptGloveHandler>().btSendText = "";
-        handRight.GetComponent<HaptGloveHandler>().btSendText = "";
-    }
 }
