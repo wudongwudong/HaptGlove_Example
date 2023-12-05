@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 248611494}
   - component: {fileID: 248611493}
   - component: {fileID: 248611492}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Sphere (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 464528403}
   - component: {fileID: 464528402}
   - component: {fileID: 464528401}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Sphere (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -370,7 +370,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Vibration ball
+  m_text: Vibrating ball
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -557,7 +557,7 @@ GameObject:
   - component: {fileID: 1284817083}
   - component: {fileID: 1284817082}
   - component: {fileID: 1284817081}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -692,7 +692,7 @@ GameObject:
   - component: {fileID: 2017500334}
   - component: {fileID: 2017500333}
   - component: {fileID: 2017500332}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2180,7 +2180,7 @@ GameObject:
   - component: {fileID: 694621670550282912}
   - component: {fileID: 694621670550282913}
   - component: {fileID: 694621670550282914}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Engine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7244,7 +7244,7 @@ GameObject:
   - component: {fileID: 694621671426313124}
   - component: {fileID: 694621671426313125}
   - component: {fileID: 694621671426313126}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: RainDrop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19020,7 +19020,7 @@ GameObject:
   - component: {fileID: 4160719738891436748}
   - component: {fileID: 7059042113778649039}
   - component: {fileID: 6448053608912404672}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Balloon_MR
   m_TagString: RigidObject
   m_Icon: {fileID: 0}
@@ -19144,7 +19144,7 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   avgSqueezeRatio: 0
-  squeezeThreshold: 0.4
+  squeezeThreshold: 0.3
 --- !u!64 &7059042113778649039
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19153,7 +19153,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4160719738891436745}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -19172,7 +19172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hapticsChannels: 010101010101
-  isTouch: 0
+  isTouch: 1
   targetPressure: 20
   isVibration: 0
   vibFrequency: 10
@@ -19403,8 +19403,7 @@ GameObject:
   - component: {fileID: 9099105005683270732}
   - component: {fileID: 9099105005683270731}
   - component: {fileID: 5802253116884908832}
-  - component: {fileID: 5802253116884908833}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Ball_Soft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19525,20 +19524,6 @@ MonoBehaviour:
   vibIntensity: 1
   isGrasped: 0
   graspedHand: {fileID: 0}
---- !u!114 &5802253116884908833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9099105005683270729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1429847474, guid: 0291acd6c839d9248a28677b26a8389a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  springForce: 30
-  damping: 10
 --- !u!1 &9099105005839665690
 GameObject:
   m_ObjectHideFlags: 0
@@ -19556,7 +19541,7 @@ GameObject:
   - component: {fileID: 9099105005839665694}
   - component: {fileID: 9099105005839665695}
   - component: {fileID: 5802253116490163481}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: HollowCube
   m_TagString: RigidObject
   m_Icon: {fileID: 0}
@@ -19730,8 +19715,7 @@ GameObject:
   - component: {fileID: 9099105006266497656}
   - component: {fileID: 9099105006266497607}
   - component: {fileID: 5802253116180064458}
-  - component: {fileID: 5802253116180064459}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Ball_Hard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19852,20 +19836,6 @@ MonoBehaviour:
   vibIntensity: 1
   isGrasped: 0
   graspedHand: {fileID: 0}
---- !u!114 &5802253116180064459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9099105006266497605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1429847474, guid: 0291acd6c839d9248a28677b26a8389a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  springForce: 100
-  damping: 60
 --- !u!1 &9099105006663704745
 GameObject:
   m_ObjectHideFlags: 0
@@ -19934,7 +19904,7 @@ GameObject:
   - component: {fileID: 9099105006689077557}
   - component: {fileID: 9099105006689077554}
   - component: {fileID: 5802253116629872974}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: HollowCube
   m_TagString: RigidObject
   m_Icon: {fileID: 0}
