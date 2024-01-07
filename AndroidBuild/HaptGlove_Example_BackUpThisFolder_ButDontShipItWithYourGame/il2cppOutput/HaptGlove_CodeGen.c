@@ -152,95 +152,97 @@ extern void U3CU3Ec__cctor_mBD16B230427A73795BD4BD7908DEE905442BBE5D (void);
 extern void U3CU3Ec__ctor_m97E0E0AF3FFE7999C1DE047A9C7AF0B75B3B6EF2 (void);
 // 0x00000046 System.Int32 HaptGlove.HandCollider/<>c::<Start>b__4_0(UnityEngine.Transform)
 extern void U3CU3Ec_U3CStartU3Eb__4_0_m56DF3A009175592DD46925EA4F127ACA2B5C9836 (void);
-// 0x00000047 System.Void HaptGlove.HapMaterial::.ctor()
+// 0x00000047 System.Void HaptGlove.HapMaterial::Start()
+extern void HapMaterial_Start_mA81CB8FF125ACD6B372BE3BB0FCEE19832F0FBE7 (void);
+// 0x00000048 System.Void HaptGlove.HapMaterial::.ctor()
 extern void HapMaterial__ctor_mC07DB7CD18495622E008F2418114C3152E29EB2E (void);
-// 0x00000048 System.String HaptGlove.Haptics::GetGhostFingerName(System.Byte)
+// 0x00000049 System.String HaptGlove.Haptics::GetGhostFingerName(System.Byte)
 extern void Haptics_GetGhostFingerName_m48E8EF0B5610CB7A765301C6AA52C41A41CA341E (void);
-// 0x00000049 System.Byte[] HaptGlove.Haptics::SetClutchState(System.String,System.String)
+// 0x0000004A System.Byte[] HaptGlove.Haptics::SetClutchState(System.String,System.String)
 extern void Haptics_SetClutchState_mBD26AB1E3D082CC5F2F0690143D4240F59802FD0 (void);
-// 0x0000004A System.Boolean HaptGlove.Haptics::IsHandValid(System.String)
+// 0x0000004B System.Boolean HaptGlove.Haptics::IsHandValid(System.String)
 extern void Haptics_IsHandValid_mA3AD08F49B10E1263749DB4C034E7C8BD1334A8A (void);
-// 0x0000004B System.Byte[] HaptGlove.Haptics::SetClutchState(System.String,System.Boolean)
+// 0x0000004C System.Byte[] HaptGlove.Haptics::SetClutchState(System.String,System.Boolean)
 extern void Haptics_SetClutchState_m06BE0F2ACB583825249856163EA842BB92228087 (void);
-// 0x0000004C System.Byte[][] HaptGlove.Haptics::SetClutchState(System.String[],System.Boolean)
+// 0x0000004D System.Byte[][] HaptGlove.Haptics::SetClutchState(System.String[],System.Boolean)
 extern void Haptics_SetClutchState_m840A865CD2F925DCDCC850ECED892C51D4E07196 (void);
-// 0x0000004D System.Byte[] HaptGlove.Haptics::ApplyHaptics(System.Byte[],System.Byte,System.Boolean)
+// 0x0000004E System.Byte[] HaptGlove.Haptics::ApplyHaptics(System.Byte[],System.Byte,System.Boolean)
 extern void Haptics_ApplyHaptics_mB23DF404FC4719FD5BB9F6EB82AACDB0A9AB701D (void);
-// 0x0000004E System.Byte[] HaptGlove.Haptics::ApplyHaptics(System.Byte,System.Byte[],System.Byte,System.Boolean)
+// 0x0000004F System.Byte[] HaptGlove.Haptics::ApplyHaptics(System.Byte,System.Byte[],System.Byte,System.Boolean)
 extern void Haptics_ApplyHaptics_m059C8DBD000D34219689680BEF9CDBE0CB119923 (void);
-// 0x0000004F System.Byte[] HaptGlove.Haptics::ApplyHaptics(System.Byte[][],System.Byte,System.Boolean)
+// 0x00000050 System.Byte[] HaptGlove.Haptics::ApplyHaptics(System.Byte[][],System.Byte,System.Boolean)
 extern void Haptics_ApplyHaptics_mC110F56F6F4DA3ECDD099506E6E622AC35C48E0E (void);
-// 0x00000050 System.Byte[] HaptGlove.Haptics::ApplyHaptics(System.Byte[][],System.Byte[],System.Boolean)
+// 0x00000051 System.Byte[] HaptGlove.Haptics::ApplyHaptics(System.Byte[][],System.Byte[],System.Boolean)
 extern void Haptics_ApplyHaptics_m67A16B7C98ADD8AECABC17E258B26346129074D0 (void);
-// 0x00000051 System.Byte[] HaptGlove.Haptics::ApplyHaptics(System.Byte,System.Byte[][],System.Byte,System.Boolean)
+// 0x00000052 System.Byte[] HaptGlove.Haptics::ApplyHaptics(System.Byte,System.Byte[][],System.Byte,System.Boolean)
 extern void Haptics_ApplyHaptics_m24EF88844F9009CE1A2DBE4D363AD9CF2E65F79C (void);
-// 0x00000052 System.Byte[] HaptGlove.Haptics::ConstructHapticsFrame(System.Byte,System.Byte[],System.Byte,System.Int32,System.String,System.Boolean)
+// 0x00000053 System.Byte[] HaptGlove.Haptics::ConstructHapticsFrame(System.Byte,System.Byte[],System.Byte,System.Int32,System.String,System.Boolean)
 extern void Haptics_ConstructHapticsFrame_m887D1212A82B2F92A1CB13BEF18ACD416F9CD8CE (void);
-// 0x00000053 System.Byte[] HaptGlove.Haptics::ApplyHapticsWithTiming(System.Byte[],System.Byte[],System.Boolean)
+// 0x00000054 System.Byte[] HaptGlove.Haptics::ApplyHapticsWithTiming(System.Byte[],System.Byte[],System.Boolean)
 extern void Haptics_ApplyHapticsWithTiming_mC69A09B6EB7C126EDA2C2733CA6BDDD0AE47347A (void);
-// 0x00000054 System.Byte[] HaptGlove.Haptics::ApplyHapticsWithTiming(System.Byte,System.Byte[],System.Byte[],System.Boolean)
+// 0x00000055 System.Byte[] HaptGlove.Haptics::ApplyHapticsWithTiming(System.Byte,System.Byte[],System.Byte[],System.Boolean)
 extern void Haptics_ApplyHapticsWithTiming_m18504F5BC250644E968C05C05465DEDE8FC6C0F3 (void);
-// 0x00000055 System.Byte[] HaptGlove.Haptics::ApplyHapticsWithTiming(System.Byte[][],System.Byte[][],System.Boolean)
+// 0x00000056 System.Byte[] HaptGlove.Haptics::ApplyHapticsWithTiming(System.Byte[][],System.Byte[][],System.Boolean)
 extern void Haptics_ApplyHapticsWithTiming_m58070570E128C1769C8465D4DFA62E11EBAF7B3C (void);
-// 0x00000056 System.Byte[] HaptGlove.Haptics::ApplyHapticsWithTiming(System.Byte,System.Byte[][],System.Byte[][],System.Boolean)
+// 0x00000057 System.Byte[] HaptGlove.Haptics::ApplyHapticsWithTiming(System.Byte,System.Byte[][],System.Byte[][],System.Boolean)
 extern void Haptics_ApplyHapticsWithTiming_mCFD11129E7DE3E4AFCDDCCCC951AAF0DAB235B40 (void);
-// 0x00000057 System.Byte[] HaptGlove.Haptics::ConstructHapticsFrame(System.Byte,System.Byte[],System.Byte[],System.Int32,System.String,System.Boolean)
+// 0x00000058 System.Byte[] HaptGlove.Haptics::ConstructHapticsFrame(System.Byte,System.Byte[],System.Byte[],System.Int32,System.String,System.Boolean)
 extern void Haptics_ConstructHapticsFrame_m014CF0B937E9C970F241636579F0CA9696B1A216 (void);
-// 0x00000058 System.Void HaptGlove.Haptics::DecodeGloveData(System.Byte[])
+// 0x00000059 System.Void HaptGlove.Haptics::DecodeGloveData(System.Byte[])
 extern void Haptics_DecodeGloveData_m97F8AA2241D6BFBA26617E8C8505C95828F68B1E (void);
-// 0x00000059 System.Void HaptGlove.Haptics::FrameDataAnalysis(System.Byte[])
+// 0x0000005A System.Void HaptGlove.Haptics::FrameDataAnalysis(System.Byte[])
 extern void Haptics_FrameDataAnalysis_mE2DF0BA6232BD25F8F1E009EA268E5EC513FD1F5 (void);
-// 0x0000005A System.Void HaptGlove.Haptics::DecodePressure(System.Byte[])
+// 0x0000005B System.Void HaptGlove.Haptics::DecodePressure(System.Byte[])
 extern void Haptics_DecodePressure_m0CC8B63D76E5BD00922DDAC440A7DC554D2FF529 (void);
-// 0x0000005B System.Void HaptGlove.Haptics::DecodeMicrotube(System.Byte[])
+// 0x0000005C System.Void HaptGlove.Haptics::DecodeMicrotube(System.Byte[])
 extern void Haptics_DecodeMicrotube_m1A78B6E6BD526FE57305BF79E73EE16987577D64 (void);
-// 0x0000005C System.Byte[] HaptGlove.Haptics::GetValveTimingFromVibIntensity(System.Byte,System.Byte,System.Byte)
+// 0x0000005D System.Byte[] HaptGlove.Haptics::GetValveTimingFromVibIntensity(System.Byte,System.Byte,System.Byte)
 extern void Haptics_GetValveTimingFromVibIntensity_mB9F0B5ABB7A51E2E219FFCD0E6911192E08D046E (void);
-// 0x0000005D System.Void HaptGlove.Haptics::.ctor()
+// 0x0000005E System.Void HaptGlove.Haptics::.ctor()
 extern void Haptics__ctor_mC7B9755EAC446D34CB7BAB9194A8161E5D0594F3 (void);
-// 0x0000005E System.Byte[] HaptGlove.Haptics/HaptGloveValvesCalibrationData::CalculateValveTiming(System.Byte,System.Byte,System.Int32,System.String)
+// 0x0000005F System.Byte[] HaptGlove.Haptics/HaptGloveValvesCalibrationData::CalculateValveTiming(System.Byte,System.Byte,System.Int32,System.String)
 extern void HaptGloveValvesCalibrationData_CalculateValveTiming_m1F84F4BD161BBD739DC318291185EDBA359313A0 (void);
-// 0x0000005F System.Byte[] HaptGlove.Haptics/HaptGloveValvesCalibrationData::GetValveTiming(System.Byte,System.Byte[],System.Byte[])
+// 0x00000060 System.Byte[] HaptGlove.Haptics/HaptGloveValvesCalibrationData::GetValveTiming(System.Byte,System.Byte[],System.Byte[])
 extern void HaptGloveValvesCalibrationData_GetValveTiming_m3A8DE1A496E04C803ABF06EB1129D209A5007241 (void);
-// 0x00000060 System.Void HaptGlove.Haptics/HaptGloveValvesCalibrationData::.ctor()
+// 0x00000061 System.Void HaptGlove.Haptics/HaptGloveValvesCalibrationData::.ctor()
 extern void HaptGloveValvesCalibrationData__ctor_mF3FB0D3BAD9CEBB53D8A2EE14DC1ECDF13B0D8C5 (void);
-// 0x00000061 System.Void HaptGlove.Haptics/HaptGloveValvesCalibrationData::.cctor()
+// 0x00000062 System.Void HaptGlove.Haptics/HaptGloveValvesCalibrationData::.cctor()
 extern void HaptGloveValvesCalibrationData__cctor_mA7C391B79335B9A7729F00852414FE283CE1F487 (void);
-// 0x00000062 System.Void HaptGlove.HaptGloveHandler::Start()
+// 0x00000063 System.Void HaptGlove.HaptGloveHandler::Start()
 extern void HaptGloveHandler_Start_m049A990DD11834DAB55FA2D5D296556C9B084883 (void);
-// 0x00000063 System.Void HaptGlove.HaptGloveHandler::Update()
+// 0x00000064 System.Void HaptGlove.HaptGloveHandler::Update()
 extern void HaptGloveHandler_Update_mAA5E01F29A6AF335A87E84C272907BE4CC2A1EE5 (void);
-// 0x00000064 System.Void HaptGlove.HaptGloveHandler::BTConnection()
+// 0x00000065 System.Void HaptGlove.HaptGloveHandler::BTConnection()
 extern void HaptGloveHandler_BTConnection_m943C67D708B5C4263E3E42319212232A8A6B17AA (void);
-// 0x00000065 System.Void HaptGlove.HaptGloveHandler::OnScanEnded(ArduinoBluetoothAPI.BluetoothHelper,System.Collections.Generic.LinkedList`1<ArduinoBluetoothAPI.BluetoothDevice>)
+// 0x00000066 System.Void HaptGlove.HaptGloveHandler::OnScanEnded(ArduinoBluetoothAPI.BluetoothHelper,System.Collections.Generic.LinkedList`1<ArduinoBluetoothAPI.BluetoothDevice>)
 extern void HaptGloveHandler_OnScanEnded_m900EF520679E8F380DC061A57411CF1802BE7E34 (void);
-// 0x00000066 System.Void HaptGlove.HaptGloveHandler::OnConnected(ArduinoBluetoothAPI.BluetoothHelper)
+// 0x00000067 System.Void HaptGlove.HaptGloveHandler::OnConnected(ArduinoBluetoothAPI.BluetoothHelper)
 extern void HaptGloveHandler_OnConnected_m731C521992089F61AAB3C161D9AEFB11053EA6DA (void);
-// 0x00000067 System.Void HaptGlove.HaptGloveHandler::OnConnectionFailed(ArduinoBluetoothAPI.BluetoothHelper)
+// 0x00000068 System.Void HaptGlove.HaptGloveHandler::OnConnectionFailed(ArduinoBluetoothAPI.BluetoothHelper)
 extern void HaptGloveHandler_OnConnectionFailed_mD8656B2E032AB9B96B21B44DBF39E5B8E6CF349B (void);
-// 0x00000068 System.Void HaptGlove.HaptGloveHandler::OnCharacteristicChanged(ArduinoBluetoothAPI.BluetoothHelper,System.Byte[],ArduinoBluetoothAPI.BluetoothHelperCharacteristic)
+// 0x00000069 System.Void HaptGlove.HaptGloveHandler::OnCharacteristicChanged(ArduinoBluetoothAPI.BluetoothHelper,System.Byte[],ArduinoBluetoothAPI.BluetoothHelperCharacteristic)
 extern void HaptGloveHandler_OnCharacteristicChanged_mB8DAB1D8CE4176B34D9422FCE97C8DA505B4A409 (void);
-// 0x00000069 System.Void HaptGlove.HaptGloveHandler::OnCharacteristicNotFound(ArduinoBluetoothAPI.BluetoothHelper,System.String,System.String)
+// 0x0000006A System.Void HaptGlove.HaptGloveHandler::OnCharacteristicNotFound(ArduinoBluetoothAPI.BluetoothHelper,System.String,System.String)
 extern void HaptGloveHandler_OnCharacteristicNotFound_m32019412784C8B15C61D783BE49E923088EA61BC (void);
-// 0x0000006A System.Void HaptGlove.HaptGloveHandler::OnServiceNotFound(ArduinoBluetoothAPI.BluetoothHelper,System.String)
+// 0x0000006B System.Void HaptGlove.HaptGloveHandler::OnServiceNotFound(ArduinoBluetoothAPI.BluetoothHelper,System.String)
 extern void HaptGloveHandler_OnServiceNotFound_mA9B85FE95C02F618B859C99FAC44C063243A3D1B (void);
-// 0x0000006B System.Void HaptGlove.HaptGloveHandler::FixedUpdate()
+// 0x0000006C System.Void HaptGlove.HaptGloveHandler::FixedUpdate()
 extern void HaptGloveHandler_FixedUpdate_mE7B1556621BC7C1809FDB9768803B7B5AF41BE58 (void);
-// 0x0000006C System.Nullable`1<System.Int32> HaptGlove.HaptGloveHandler::BTSend(System.Byte[])
+// 0x0000006D System.Nullable`1<System.Int32> HaptGlove.HaptGloveHandler::BTSend(System.Byte[])
 extern void HaptGloveHandler_BTSend_m7154840625673597022380D3354F7CE625D18C17 (void);
-// 0x0000006D System.Void HaptGlove.HaptGloveHandler::AirPressureSourceControl()
+// 0x0000006E System.Void HaptGlove.HaptGloveHandler::AirPressureSourceControl()
 extern void HaptGloveHandler_AirPressureSourceControl_mD04458FCE8AE82172423178FCBBC7327018A7C91 (void);
-// 0x0000006E System.Int32[] HaptGlove.HaptGloveHandler::GetAirPressure()
+// 0x0000006F System.Int32[] HaptGlove.HaptGloveHandler::GetAirPressure()
 extern void HaptGloveHandler_GetAirPressure_m86D2E7A522C09BC615F4DBA86B40D5FFE8097CD4 (void);
-// 0x0000006F System.Int32[] HaptGlove.HaptGloveHandler::GetFingerPosition()
+// 0x00000070 System.Int32[] HaptGlove.HaptGloveHandler::GetFingerPosition()
 extern void HaptGloveHandler_GetFingerPosition_m37AFA544D44A6626ABE5D1695B472940FAC115D5 (void);
-// 0x00000070 System.Void HaptGlove.HaptGloveHandler::OnDestroy()
+// 0x00000071 System.Void HaptGlove.HaptGloveHandler::OnDestroy()
 extern void HaptGloveHandler_OnDestroy_m1428CFA08EFDD02751E2987306CACCCF79DD2816 (void);
-// 0x00000071 System.Void HaptGlove.HaptGloveHandler::.ctor()
+// 0x00000072 System.Void HaptGlove.HaptGloveHandler::.ctor()
 extern void HaptGloveHandler__ctor_m857E656A9C0FA5D31A51FC8839F32C4A3B30AC90 (void);
-// 0x00000072 System.Void HaptGlove.HaptGloveHandler::.cctor()
+// 0x00000073 System.Void HaptGlove.HaptGloveHandler::.cctor()
 extern void HaptGloveHandler__cctor_m67655E394E303502630036B874654EA50A8F7269 (void);
-static Il2CppMethodPointer s_methodPointers[114] = 
+static Il2CppMethodPointer s_methodPointers[115] = 
 {
 	DeformMesh_Start_m8117CECD835F122255BE54424A4807FA32967C4A,
 	DeformMesh_FixedUpdate_mD16FBB9AC491E452B383B3C7137C01ECA6265830,
@@ -312,6 +314,7 @@ static Il2CppMethodPointer s_methodPointers[114] =
 	U3CU3Ec__cctor_mBD16B230427A73795BD4BD7908DEE905442BBE5D,
 	U3CU3Ec__ctor_m97E0E0AF3FFE7999C1DE047A9C7AF0B75B3B6EF2,
 	U3CU3Ec_U3CStartU3Eb__4_0_m56DF3A009175592DD46925EA4F127ACA2B5C9836,
+	HapMaterial_Start_mA81CB8FF125ACD6B372BE3BB0FCEE19832F0FBE7,
 	HapMaterial__ctor_mC07DB7CD18495622E008F2418114C3152E29EB2E,
 	Haptics_GetGhostFingerName_m48E8EF0B5610CB7A765301C6AA52C41A41CA341E,
 	Haptics_SetClutchState_mBD26AB1E3D082CC5F2F0690143D4240F59802FD0,
@@ -357,7 +360,7 @@ static Il2CppMethodPointer s_methodPointers[114] =
 	HaptGloveHandler__ctor_m857E656A9C0FA5D31A51FC8839F32C4A3B30AC90,
 	HaptGloveHandler__cctor_m67655E394E303502630036B874654EA50A8F7269,
 };
-static const int32_t s_InvokerIndices[114] = 
+static const int32_t s_InvokerIndices[115] = 
 {
 	5850,
 	5850,
@@ -430,6 +433,7 @@ static const int32_t s_InvokerIndices[114] =
 	5850,
 	3819,
 	5850,
+	5850,
 	8405,
 	7821,
 	8225,
@@ -478,7 +482,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_HaptGlove_CodeGenModule;
 const Il2CppCodeGenModule g_HaptGlove_CodeGenModule = 
 {
 	"HaptGlove.dll",
-	114,
+	115,
 	s_methodPointers,
 	0,
 	NULL,

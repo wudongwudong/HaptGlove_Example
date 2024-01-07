@@ -527,165 +527,149 @@ extern void HaptGloveUI_UI_Actions_m6C0467D19B66F18069DCF596BDBF883B1E55D3D1 (vo
 extern void HaptGloveUI_BTButtonOnClick_m9434A54535BFD7FE7C7BCCFBC31594BA560BB9E7 (void);
 // 0x00000104 System.Void HaptGloveUI::PSButtonOnClick()
 extern void HaptGloveUI_PSButtonOnClick_mED92A426E0AC660FB01BBFA9A653524E20EEF358 (void);
-// 0x00000105 System.Collections.IEnumerator HaptGloveUI::DelayTesing(System.Single)
-extern void HaptGloveUI_DelayTesing_mE13806EA5F4DBA07830DA12AC7CDDD4052B4C1E1 (void);
-// 0x00000106 System.Void HaptGloveUI::ExButtonOnClick()
+// 0x00000105 System.Void HaptGloveUI::ExButtonOnClick()
 extern void HaptGloveUI_ExButtonOnClick_mBE850F4E49A7FCABE024E3F61B56E060C31929A3 (void);
-// 0x00000107 System.Void HaptGloveUI::DropObjectButtonOnClick()
+// 0x00000106 System.Void HaptGloveUI::DropObjectButtonOnClick()
 extern void HaptGloveUI_DropObjectButtonOnClick_mFAC1B8AFDAB140A0AF3AF9BC59A316757C5A3107 (void);
-// 0x00000108 System.Void HaptGloveUI::HandMeshButtonOnClick()
+// 0x00000107 System.Void HaptGloveUI::HandMeshButtonOnClick()
 extern void HaptGloveUI_HandMeshButtonOnClick_mA786F14B537DF11D773CA12651B713D8632F9235 (void);
-// 0x00000109 System.Void HaptGloveUI::ClearLogButtonOnClick()
-extern void HaptGloveUI_ClearLogButtonOnClick_mA3FF49806F3B6ED95915C62D2EF2AA3D9D916896 (void);
-// 0x0000010A System.Void HaptGloveUI::.ctor()
+// 0x00000108 System.Void HaptGloveUI::.ctor()
 extern void HaptGloveUI__ctor_m4BE86790E4BF768EC1B3EF37D5F33D2189C19BE1 (void);
-// 0x0000010B System.Void HaptGloveUI/<DelayTesing>d__9::.ctor(System.Int32)
-extern void U3CDelayTesingU3Ed__9__ctor_mC99ED2BAEB300FCF0A82E1CA690B0FFF1BAC060F (void);
-// 0x0000010C System.Void HaptGloveUI/<DelayTesing>d__9::System.IDisposable.Dispose()
-extern void U3CDelayTesingU3Ed__9_System_IDisposable_Dispose_m76BFD00AA0DD2F4FD0B9B05600BC11AB23D02A12 (void);
-// 0x0000010D System.Boolean HaptGloveUI/<DelayTesing>d__9::MoveNext()
-extern void U3CDelayTesingU3Ed__9_MoveNext_m80567F28EB6BD53EFBC3F7B8E4619E7F63C3FD7B (void);
-// 0x0000010E System.Object HaptGloveUI/<DelayTesing>d__9::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CDelayTesingU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5D35D00A62C9822E4224663FF9C59F4D2C3A86FF (void);
-// 0x0000010F System.Void HaptGloveUI/<DelayTesing>d__9::System.Collections.IEnumerator.Reset()
-extern void U3CDelayTesingU3Ed__9_System_Collections_IEnumerator_Reset_mCCAA3901B2DD7073776CD3D0DBB7749004AF7B26 (void);
-// 0x00000110 System.Object HaptGloveUI/<DelayTesing>d__9::System.Collections.IEnumerator.get_Current()
-extern void U3CDelayTesingU3Ed__9_System_Collections_IEnumerator_get_Current_m8E23040FFFE6296BD56A0C6524B2547BA402E791 (void);
-// 0x00000111 System.Void SimpleButton::OnTriggerEnter(UnityEngine.Collider)
+// 0x00000109 System.Void SimpleButton::OnTriggerEnter(UnityEngine.Collider)
 extern void SimpleButton_OnTriggerEnter_mF67BD9FDAED1C7CE77A1820FD9E9EBD2F845F18F (void);
-// 0x00000112 System.Void SimpleButton::OnTriggerExit(UnityEngine.Collider)
+// 0x0000010A System.Void SimpleButton::OnTriggerExit(UnityEngine.Collider)
 extern void SimpleButton_OnTriggerExit_m62C51B8CECA2B45CA0F702B54FDCE53A22B9D60A (void);
-// 0x00000113 System.Collections.IEnumerator SimpleButton::DelayFunc()
+// 0x0000010B System.Collections.IEnumerator SimpleButton::DelayFunc()
 extern void SimpleButton_DelayFunc_mEBEBBA17A4E950D8273440C3E8981D635CF7D206 (void);
-// 0x00000114 System.Void SimpleButton::.ctor()
+// 0x0000010C System.Void SimpleButton::.ctor()
 extern void SimpleButton__ctor_mDDC88765C34F7C76EE5DBFE1CB182ADCF0041916 (void);
-// 0x00000115 System.Void SimpleButton/<DelayFunc>d__7::.ctor(System.Int32)
+// 0x0000010D System.Void SimpleButton/<DelayFunc>d__7::.ctor(System.Int32)
 extern void U3CDelayFuncU3Ed__7__ctor_mF955D39D74386B8BE51B8E17EBF9954153D290B2 (void);
-// 0x00000116 System.Void SimpleButton/<DelayFunc>d__7::System.IDisposable.Dispose()
+// 0x0000010E System.Void SimpleButton/<DelayFunc>d__7::System.IDisposable.Dispose()
 extern void U3CDelayFuncU3Ed__7_System_IDisposable_Dispose_m17740D676748FAD5648586FAA10C275E3471671B (void);
-// 0x00000117 System.Boolean SimpleButton/<DelayFunc>d__7::MoveNext()
+// 0x0000010F System.Boolean SimpleButton/<DelayFunc>d__7::MoveNext()
 extern void U3CDelayFuncU3Ed__7_MoveNext_mCD4A42B3B50C0876AA5F7456ED11426C3C7AB943 (void);
-// 0x00000118 System.Object SimpleButton/<DelayFunc>d__7::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000110 System.Object SimpleButton/<DelayFunc>d__7::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CDelayFuncU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m20D2FB40E32B2068699A35CA9DDB8FC6BB746339 (void);
-// 0x00000119 System.Void SimpleButton/<DelayFunc>d__7::System.Collections.IEnumerator.Reset()
+// 0x00000111 System.Void SimpleButton/<DelayFunc>d__7::System.Collections.IEnumerator.Reset()
 extern void U3CDelayFuncU3Ed__7_System_Collections_IEnumerator_Reset_m8ACD49CA014A264E7796BB4E378E00D96D8D7C5B (void);
-// 0x0000011A System.Object SimpleButton/<DelayFunc>d__7::System.Collections.IEnumerator.get_Current()
+// 0x00000112 System.Object SimpleButton/<DelayFunc>d__7::System.Collections.IEnumerator.get_Current()
 extern void U3CDelayFuncU3Ed__7_System_Collections_IEnumerator_get_Current_m3EDBB8699DC8E2D0135B0BCE4E79960F49E75A74 (void);
-// 0x0000011B System.Void DigitalRuby.RainMaker.DemoScript::UpdateRain()
+// 0x00000113 System.Void DigitalRuby.RainMaker.DemoScript::UpdateRain()
 extern void DemoScript_UpdateRain_m1D9AC027015CD81DB91E34584308374F739EA770 (void);
-// 0x0000011C System.Void DigitalRuby.RainMaker.DemoScript::UpdateMovement()
+// 0x00000114 System.Void DigitalRuby.RainMaker.DemoScript::UpdateMovement()
 extern void DemoScript_UpdateMovement_m6C8C6F93AA52E5DBE924C65138951939EA0036FD (void);
-// 0x0000011D System.Void DigitalRuby.RainMaker.DemoScript::UpdateMouseLook()
+// 0x00000115 System.Void DigitalRuby.RainMaker.DemoScript::UpdateMouseLook()
 extern void DemoScript_UpdateMouseLook_m77C457B5D8FDDF017749266DDFA57E7E3DC43E04 (void);
-// 0x0000011E System.Void DigitalRuby.RainMaker.DemoScript::RainSliderChanged(System.Single)
+// 0x00000116 System.Void DigitalRuby.RainMaker.DemoScript::RainSliderChanged(System.Single)
 extern void DemoScript_RainSliderChanged_m5301A3F363348F57C659C499A96EB5A1EF133946 (void);
-// 0x0000011F System.Void DigitalRuby.RainMaker.DemoScript::MouseLookChanged(System.Boolean)
+// 0x00000117 System.Void DigitalRuby.RainMaker.DemoScript::MouseLookChanged(System.Boolean)
 extern void DemoScript_MouseLookChanged_m055402ADB808E754AD12D073A15825DFB619E122 (void);
-// 0x00000120 System.Void DigitalRuby.RainMaker.DemoScript::FlashlightChanged(System.Boolean)
+// 0x00000118 System.Void DigitalRuby.RainMaker.DemoScript::FlashlightChanged(System.Boolean)
 extern void DemoScript_FlashlightChanged_m0E02276639E0ABC8DF747D4DDE782BBB3B03C20F (void);
-// 0x00000121 System.Void DigitalRuby.RainMaker.DemoScript::DawnDuskSliderChanged(System.Single)
+// 0x00000119 System.Void DigitalRuby.RainMaker.DemoScript::DawnDuskSliderChanged(System.Single)
 extern void DemoScript_DawnDuskSliderChanged_mF30C0F22099443ABF128793A0B82A217A541B5A1 (void);
-// 0x00000122 System.Void DigitalRuby.RainMaker.DemoScript::FollowCameraChanged(System.Boolean)
+// 0x0000011A System.Void DigitalRuby.RainMaker.DemoScript::FollowCameraChanged(System.Boolean)
 extern void DemoScript_FollowCameraChanged_mC99BED3EBD4A628ED39E06D7D3CEC2D6B6ED22E2 (void);
-// 0x00000123 System.Void DigitalRuby.RainMaker.DemoScript::Start()
+// 0x0000011B System.Void DigitalRuby.RainMaker.DemoScript::Start()
 extern void DemoScript_Start_mC7938F15EE30AD159977BB73156766E583B203DE (void);
-// 0x00000124 System.Void DigitalRuby.RainMaker.DemoScript::Update()
+// 0x0000011C System.Void DigitalRuby.RainMaker.DemoScript::Update()
 extern void DemoScript_Update_m4854550ABDC5F13DCA42B8995808479DD374923F (void);
-// 0x00000125 System.Single DigitalRuby.RainMaker.DemoScript::ClampAngle(System.Single,System.Single,System.Single)
+// 0x0000011D System.Single DigitalRuby.RainMaker.DemoScript::ClampAngle(System.Single,System.Single,System.Single)
 extern void DemoScript_ClampAngle_m59D3AC86FC39A38CF8D94207CC30BD5F849D2F65 (void);
-// 0x00000126 System.Void DigitalRuby.RainMaker.DemoScript::.ctor()
+// 0x0000011E System.Void DigitalRuby.RainMaker.DemoScript::.ctor()
 extern void DemoScript__ctor_m16F3304E3931EE4143822449C4EC2A340A9889C2 (void);
-// 0x00000127 System.Void DigitalRuby.RainMaker.DemoScript2D::Start()
+// 0x0000011F System.Void DigitalRuby.RainMaker.DemoScript2D::Start()
 extern void DemoScript2D_Start_mBF85E9AC5C5EBBBE2F6BCFD5241B5BC84C857B3B (void);
-// 0x00000128 System.Void DigitalRuby.RainMaker.DemoScript2D::Update()
+// 0x00000120 System.Void DigitalRuby.RainMaker.DemoScript2D::Update()
 extern void DemoScript2D_Update_m8E129607C90B511848D734CF9FE3CE6243331AF2 (void);
-// 0x00000129 System.Void DigitalRuby.RainMaker.DemoScript2D::RainSliderChanged(System.Single)
+// 0x00000121 System.Void DigitalRuby.RainMaker.DemoScript2D::RainSliderChanged(System.Single)
 extern void DemoScript2D_RainSliderChanged_mD55EEF2C0CD21D3FA85D015389998AE7D6B291CE (void);
-// 0x0000012A System.Void DigitalRuby.RainMaker.DemoScript2D::CollisionToggleChanged(System.Boolean)
+// 0x00000122 System.Void DigitalRuby.RainMaker.DemoScript2D::CollisionToggleChanged(System.Boolean)
 extern void DemoScript2D_CollisionToggleChanged_m771F983DCA7F69100A4252910CC62F2800AC3D8A (void);
-// 0x0000012B System.Void DigitalRuby.RainMaker.DemoScript2D::.ctor()
+// 0x00000123 System.Void DigitalRuby.RainMaker.DemoScript2D::.ctor()
 extern void DemoScript2D__ctor_mA6DA2A4487D609B739FECD356B4E5E31198F5999 (void);
-// 0x0000012C System.Void DigitalRuby.RainMaker.DemoScriptStartRainOnSpaceBar::Start()
+// 0x00000124 System.Void DigitalRuby.RainMaker.DemoScriptStartRainOnSpaceBar::Start()
 extern void DemoScriptStartRainOnSpaceBar_Start_m715DC13B165820EE16E22BC3A406CCA59DAECD48 (void);
-// 0x0000012D System.Void DigitalRuby.RainMaker.DemoScriptStartRainOnSpaceBar::Update()
+// 0x00000125 System.Void DigitalRuby.RainMaker.DemoScriptStartRainOnSpaceBar::Update()
 extern void DemoScriptStartRainOnSpaceBar_Update_m417AE1BAE149F92BF970F88F67EA00E3A7395388 (void);
-// 0x0000012E System.Void DigitalRuby.RainMaker.DemoScriptStartRainOnSpaceBar::.ctor()
+// 0x00000126 System.Void DigitalRuby.RainMaker.DemoScriptStartRainOnSpaceBar::.ctor()
 extern void DemoScriptStartRainOnSpaceBar__ctor_m3F0D6FA9742E601574589140EB6D7FC31E074AFD (void);
-// 0x0000012F System.Void DigitalRuby.RainMaker.BaseRainScript::UpdateWind()
+// 0x00000127 System.Void DigitalRuby.RainMaker.BaseRainScript::UpdateWind()
 extern void BaseRainScript_UpdateWind_mA41659544ECB63201BBB6A3FDD491C1DD8EDCB78 (void);
-// 0x00000130 System.Void DigitalRuby.RainMaker.BaseRainScript::CheckForRainChange()
+// 0x00000128 System.Void DigitalRuby.RainMaker.BaseRainScript::CheckForRainChange()
 extern void BaseRainScript_CheckForRainChange_mE5317F1FC80D6C43599DA16FE497250FA2A04B5B (void);
-// 0x00000131 System.Void DigitalRuby.RainMaker.BaseRainScript::Start()
+// 0x00000129 System.Void DigitalRuby.RainMaker.BaseRainScript::Start()
 extern void BaseRainScript_Start_m8687C15AE3D4E4C290BE64B94686C9E10AE83919 (void);
-// 0x00000132 System.Void DigitalRuby.RainMaker.BaseRainScript::Update()
+// 0x0000012A System.Void DigitalRuby.RainMaker.BaseRainScript::Update()
 extern void BaseRainScript_Update_mE588EF06A0EF3D575F40AB2BB402CE385C58AF63 (void);
-// 0x00000133 System.Single DigitalRuby.RainMaker.BaseRainScript::RainFallEmissionRate()
+// 0x0000012B System.Single DigitalRuby.RainMaker.BaseRainScript::RainFallEmissionRate()
 extern void BaseRainScript_RainFallEmissionRate_m6425004A3236A7BA58CAE25AD592A7D97C7948B2 (void);
-// 0x00000134 System.Single DigitalRuby.RainMaker.BaseRainScript::MistEmissionRate()
+// 0x0000012C System.Single DigitalRuby.RainMaker.BaseRainScript::MistEmissionRate()
 extern void BaseRainScript_MistEmissionRate_mF8FA9D9880ED829F5D7C61291AE929954A3AD311 (void);
-// 0x00000135 System.Boolean DigitalRuby.RainMaker.BaseRainScript::get_UseRainMistSoftParticles()
+// 0x0000012D System.Boolean DigitalRuby.RainMaker.BaseRainScript::get_UseRainMistSoftParticles()
 extern void BaseRainScript_get_UseRainMistSoftParticles_mC2CF7D770D915A63B20D69265EC27FA1E3F34E53 (void);
-// 0x00000136 System.Void DigitalRuby.RainMaker.BaseRainScript::.ctor()
+// 0x0000012E System.Void DigitalRuby.RainMaker.BaseRainScript::.ctor()
 extern void BaseRainScript__ctor_mDF34113D5FA6D3A9AF70649B226BC51B6FEFD422 (void);
-// 0x00000137 UnityEngine.AudioSource DigitalRuby.RainMaker.LoopingAudioSource::get_AudioSource()
+// 0x0000012F UnityEngine.AudioSource DigitalRuby.RainMaker.LoopingAudioSource::get_AudioSource()
 extern void LoopingAudioSource_get_AudioSource_m7065C418300FE55E18B4CC7F94DD0B104B10049E (void);
-// 0x00000138 System.Void DigitalRuby.RainMaker.LoopingAudioSource::set_AudioSource(UnityEngine.AudioSource)
+// 0x00000130 System.Void DigitalRuby.RainMaker.LoopingAudioSource::set_AudioSource(UnityEngine.AudioSource)
 extern void LoopingAudioSource_set_AudioSource_m78D358958BE0CC9674B7371D1DAC93531135D3E2 (void);
-// 0x00000139 System.Single DigitalRuby.RainMaker.LoopingAudioSource::get_TargetVolume()
+// 0x00000131 System.Single DigitalRuby.RainMaker.LoopingAudioSource::get_TargetVolume()
 extern void LoopingAudioSource_get_TargetVolume_mC8FAD031000782FBF9DB6683ED8A63A503CED47F (void);
-// 0x0000013A System.Void DigitalRuby.RainMaker.LoopingAudioSource::set_TargetVolume(System.Single)
+// 0x00000132 System.Void DigitalRuby.RainMaker.LoopingAudioSource::set_TargetVolume(System.Single)
 extern void LoopingAudioSource_set_TargetVolume_mB7E2108798FEBFD47D49006B9A6AD0273EDE0CBF (void);
-// 0x0000013B System.Void DigitalRuby.RainMaker.LoopingAudioSource::.ctor(UnityEngine.MonoBehaviour,UnityEngine.AudioClip,UnityEngine.Audio.AudioMixerGroup)
+// 0x00000133 System.Void DigitalRuby.RainMaker.LoopingAudioSource::.ctor(UnityEngine.MonoBehaviour,UnityEngine.AudioClip,UnityEngine.Audio.AudioMixerGroup)
 extern void LoopingAudioSource__ctor_m70739E5DB898B4D0456BB12A2A727D6A662B6FA3 (void);
-// 0x0000013C System.Void DigitalRuby.RainMaker.LoopingAudioSource::Play(System.Single)
+// 0x00000134 System.Void DigitalRuby.RainMaker.LoopingAudioSource::Play(System.Single)
 extern void LoopingAudioSource_Play_m2665DF0EAFCBF66BCFB90A1998BADAD038E58E45 (void);
-// 0x0000013D System.Void DigitalRuby.RainMaker.LoopingAudioSource::Stop()
+// 0x00000135 System.Void DigitalRuby.RainMaker.LoopingAudioSource::Stop()
 extern void LoopingAudioSource_Stop_m02E32099CFA66944960F5F5CB15261D64C481444 (void);
-// 0x0000013E System.Void DigitalRuby.RainMaker.LoopingAudioSource::Update()
+// 0x00000136 System.Void DigitalRuby.RainMaker.LoopingAudioSource::Update()
 extern void LoopingAudioSource_Update_m3B7209F06B2B228C94FDDBC6522E59281DC5EA02 (void);
-// 0x0000013F System.Void DigitalRuby.RainMaker.RainCollision::Start()
+// 0x00000137 System.Void DigitalRuby.RainMaker.RainCollision::Start()
 extern void RainCollision_Start_m0ED3FA833DD2C7AE60F96A84C9CDAC788AC2EB9E (void);
-// 0x00000140 System.Void DigitalRuby.RainMaker.RainCollision::Update()
+// 0x00000138 System.Void DigitalRuby.RainMaker.RainCollision::Update()
 extern void RainCollision_Update_mFB16DE326A7EEEEF3DE3DEC68D6DF488EA0686C5 (void);
-// 0x00000141 System.Void DigitalRuby.RainMaker.RainCollision::Emit(UnityEngine.ParticleSystem,UnityEngine.Vector3&)
+// 0x00000139 System.Void DigitalRuby.RainMaker.RainCollision::Emit(UnityEngine.ParticleSystem,UnityEngine.Vector3&)
 extern void RainCollision_Emit_m77930BD1CBDC56303E220E4B7F72AE082729E55D (void);
-// 0x00000142 System.Void DigitalRuby.RainMaker.RainCollision::OnParticleCollision(UnityEngine.GameObject)
+// 0x0000013A System.Void DigitalRuby.RainMaker.RainCollision::OnParticleCollision(UnityEngine.GameObject)
 extern void RainCollision_OnParticleCollision_m6BBBEE55CAD303E7FC6A08511832C5F650BA00EA (void);
-// 0x00000143 System.Void DigitalRuby.RainMaker.RainCollision::.ctor()
+// 0x0000013B System.Void DigitalRuby.RainMaker.RainCollision::.ctor()
 extern void RainCollision__ctor_m5C8560B6BAF26D67CE366929B2189B53DCF19979 (void);
-// 0x00000144 System.Void DigitalRuby.RainMaker.RainCollision::.cctor()
+// 0x0000013C System.Void DigitalRuby.RainMaker.RainCollision::.cctor()
 extern void RainCollision__cctor_m55AC4F38C37E71FC0BB19C7F60472A5E6FB323AE (void);
-// 0x00000145 System.Void DigitalRuby.RainMaker.RainScript::UpdateRain()
+// 0x0000013D System.Void DigitalRuby.RainMaker.RainScript::UpdateRain()
 extern void RainScript_UpdateRain_mC8F27ED19ABEBC9F75B7E269D3824A76D43029E2 (void);
-// 0x00000146 System.Void DigitalRuby.RainMaker.RainScript::Start()
+// 0x0000013E System.Void DigitalRuby.RainMaker.RainScript::Start()
 extern void RainScript_Start_m0CA9E19727CEB42CBC22F00292BE841FE4FF8C5C (void);
-// 0x00000147 System.Void DigitalRuby.RainMaker.RainScript::Update()
+// 0x0000013F System.Void DigitalRuby.RainMaker.RainScript::Update()
 extern void RainScript_Update_m83DF982F04CDCEF51F07D745E03473E438FFBF45 (void);
-// 0x00000148 System.Void DigitalRuby.RainMaker.RainScript::.ctor()
+// 0x00000140 System.Void DigitalRuby.RainMaker.RainScript::.ctor()
 extern void RainScript__ctor_m904ED00F45D16299FFAC4A0259CF01F6DF3934D1 (void);
-// 0x00000149 System.Void DigitalRuby.RainMaker.RainScript2D::EmitExplosion(UnityEngine.Vector3&)
+// 0x00000141 System.Void DigitalRuby.RainMaker.RainScript2D::EmitExplosion(UnityEngine.Vector3&)
 extern void RainScript2D_EmitExplosion_mF622AE9E524EB074CA3E81E8CA28AC066A41F106 (void);
-// 0x0000014A System.Void DigitalRuby.RainMaker.RainScript2D::TransformParticleSystem(UnityEngine.ParticleSystem,UnityEngine.Vector2,UnityEngine.Vector2)
+// 0x00000142 System.Void DigitalRuby.RainMaker.RainScript2D::TransformParticleSystem(UnityEngine.ParticleSystem,UnityEngine.Vector2,UnityEngine.Vector2)
 extern void RainScript2D_TransformParticleSystem_mCA622E7F4A450D1C75D1B052401E3D749B00AC11 (void);
-// 0x0000014B System.Void DigitalRuby.RainMaker.RainScript2D::CheckForCollisionsRainParticles()
+// 0x00000143 System.Void DigitalRuby.RainMaker.RainScript2D::CheckForCollisionsRainParticles()
 extern void RainScript2D_CheckForCollisionsRainParticles_m539998E873D8F1D2E3ED2FB6F15DACFC6D397104 (void);
-// 0x0000014C System.Void DigitalRuby.RainMaker.RainScript2D::CheckForCollisionsMistParticles()
+// 0x00000144 System.Void DigitalRuby.RainMaker.RainScript2D::CheckForCollisionsMistParticles()
 extern void RainScript2D_CheckForCollisionsMistParticles_m4D5BD3DB838149AF935BB7C7789076D5561B6CB2 (void);
-// 0x0000014D System.Void DigitalRuby.RainMaker.RainScript2D::Start()
+// 0x00000145 System.Void DigitalRuby.RainMaker.RainScript2D::Start()
 extern void RainScript2D_Start_mAC6B71E67E342520A17C733859F4CF03783A8953 (void);
-// 0x0000014E System.Void DigitalRuby.RainMaker.RainScript2D::Update()
+// 0x00000146 System.Void DigitalRuby.RainMaker.RainScript2D::Update()
 extern void RainScript2D_Update_mFBA340A29A023F1F547E771CC085F3FBF40503E9 (void);
-// 0x0000014F System.Single DigitalRuby.RainMaker.RainScript2D::RainFallEmissionRate()
+// 0x00000147 System.Single DigitalRuby.RainMaker.RainScript2D::RainFallEmissionRate()
 extern void RainScript2D_RainFallEmissionRate_m62AE412DFEA8BB0BFC08D27ACA83761F4DFB74E0 (void);
-// 0x00000150 System.Boolean DigitalRuby.RainMaker.RainScript2D::get_UseRainMistSoftParticles()
+// 0x00000148 System.Boolean DigitalRuby.RainMaker.RainScript2D::get_UseRainMistSoftParticles()
 extern void RainScript2D_get_UseRainMistSoftParticles_mB3B399F4961D21506DEF9A09833B2DA3CC941924 (void);
-// 0x00000151 System.Void DigitalRuby.RainMaker.RainScript2D::.ctor()
+// 0x00000149 System.Void DigitalRuby.RainMaker.RainScript2D::.ctor()
 extern void RainScript2D__ctor_m27142636A537D5322DD2773E52474BF24E169D81 (void);
-// 0x00000152 System.Void DigitalRuby.RainMaker.RainScript2D::.cctor()
+// 0x0000014A System.Void DigitalRuby.RainMaker.RainScript2D::.cctor()
 extern void RainScript2D__cctor_m266418890BBE84173070244DBF98212F6DD97BAF (void);
-// 0x00000153 System.UInt32 <PrivateImplementationDetails>::ComputeStringHash(System.String)
+// 0x0000014B System.UInt32 <PrivateImplementationDetails>::ComputeStringHash(System.String)
 extern void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876 (void);
-static Il2CppMethodPointer s_methodPointers[339] = 
+static Il2CppMethodPointer s_methodPointers[331] = 
 {
 	Scene1_Start_m91E19C68C174343F192180C93956B255860928E0,
 	Scene1_OnConnected_mA58DC93A644F646D61E85DCA399340BC6745F673,
@@ -947,18 +931,10 @@ static Il2CppMethodPointer s_methodPointers[339] =
 	HaptGloveUI_UI_Actions_m6C0467D19B66F18069DCF596BDBF883B1E55D3D1,
 	HaptGloveUI_BTButtonOnClick_m9434A54535BFD7FE7C7BCCFBC31594BA560BB9E7,
 	HaptGloveUI_PSButtonOnClick_mED92A426E0AC660FB01BBFA9A653524E20EEF358,
-	HaptGloveUI_DelayTesing_mE13806EA5F4DBA07830DA12AC7CDDD4052B4C1E1,
 	HaptGloveUI_ExButtonOnClick_mBE850F4E49A7FCABE024E3F61B56E060C31929A3,
 	HaptGloveUI_DropObjectButtonOnClick_mFAC1B8AFDAB140A0AF3AF9BC59A316757C5A3107,
 	HaptGloveUI_HandMeshButtonOnClick_mA786F14B537DF11D773CA12651B713D8632F9235,
-	HaptGloveUI_ClearLogButtonOnClick_mA3FF49806F3B6ED95915C62D2EF2AA3D9D916896,
 	HaptGloveUI__ctor_m4BE86790E4BF768EC1B3EF37D5F33D2189C19BE1,
-	U3CDelayTesingU3Ed__9__ctor_mC99ED2BAEB300FCF0A82E1CA690B0FFF1BAC060F,
-	U3CDelayTesingU3Ed__9_System_IDisposable_Dispose_m76BFD00AA0DD2F4FD0B9B05600BC11AB23D02A12,
-	U3CDelayTesingU3Ed__9_MoveNext_m80567F28EB6BD53EFBC3F7B8E4619E7F63C3FD7B,
-	U3CDelayTesingU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5D35D00A62C9822E4224663FF9C59F4D2C3A86FF,
-	U3CDelayTesingU3Ed__9_System_Collections_IEnumerator_Reset_mCCAA3901B2DD7073776CD3D0DBB7749004AF7B26,
-	U3CDelayTesingU3Ed__9_System_Collections_IEnumerator_get_Current_m8E23040FFFE6296BD56A0C6524B2547BA402E791,
 	SimpleButton_OnTriggerEnter_mF67BD9FDAED1C7CE77A1820FD9E9EBD2F845F18F,
 	SimpleButton_OnTriggerExit_m62C51B8CECA2B45CA0F702B54FDCE53A22B9D60A,
 	SimpleButton_DelayFunc_mEBEBBA17A4E950D8273440C3E8981D635CF7D206,
@@ -1027,7 +1003,7 @@ static Il2CppMethodPointer s_methodPointers[339] =
 	RainScript2D__cctor_m266418890BBE84173070244DBF98212F6DD97BAF,
 	U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876,
 };
-static const int32_t s_InvokerIndices[339] = 
+static const int32_t s_InvokerIndices[331] = 
 {
 	5850,
 	4628,
@@ -1289,18 +1265,10 @@ static const int32_t s_InvokerIndices[339] =
 	4628,
 	5850,
 	5850,
-	4088,
 	5850,
 	5850,
 	5850,
 	5850,
-	5850,
-	4603,
-	5850,
-	5635,
-	5727,
-	5850,
-	5727,
 	4628,
 	4628,
 	5727,
@@ -1396,7 +1364,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	339,
+	331,
 	s_methodPointers,
 	0,
 	NULL,

@@ -3368,6 +3368,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 248611491, guid: 5f8c6d3433eb28441adf7eef1f9f2bda, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 464528401, guid: 5f8c6d3433eb28441adf7eef1f9f2bda, type: 3}
+      propertyPath: vibFrequency
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 464528406, guid: 5f8c6d3433eb28441adf7eef1f9f2bda, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.346
+      objectReference: {fileID: 0}
+    - target: {fileID: 1284817086, guid: 5f8c6d3433eb28441adf7eef1f9f2bda, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.027
+      objectReference: {fileID: 0}
+    - target: {fileID: 2017500332, guid: 5f8c6d3433eb28441adf7eef1f9f2bda, type: 3}
+      propertyPath: vibFrequency
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2017500337, guid: 5f8c6d3433eb28441adf7eef1f9f2bda, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.168
+      objectReference: {fileID: 0}
     - target: {fileID: 6552934021161217508, guid: 5f8c6d3433eb28441adf7eef1f9f2bda, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -3553,8 +3577,8 @@ MonoBehaviour:
   m_Camera: {fileID: 52660987}
   m_OriginBaseGameObject: {fileID: 2068784615}
   m_CameraFloorOffsetObject: {fileID: 1015126099}
-  m_RequestedTrackingOriginMode: 0
-  m_CameraYOffset: 1.1176
+  m_RequestedTrackingOriginMode: 1
+  m_CameraYOffset: 1.7
 --- !u!4 &2068784617
 Transform:
   m_ObjectHideFlags: 0

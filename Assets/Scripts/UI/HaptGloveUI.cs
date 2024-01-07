@@ -131,6 +131,14 @@ public class HaptGloveUI : MonoBehaviour
                     break;
                 case "Right":
                     handRight.GetComponent<Grasping>().DropObject();
+
+                    //List<byte> buf = new List<byte>();
+                    //for (byte i = 255; i > 0; i--)
+                    //{
+                    //    buf.Add(i);
+                    //}
+
+                    //handRight.GetComponent<HaptGloveHandler>().BTSend(buf.ToArray());
                     break;
             }
         }
