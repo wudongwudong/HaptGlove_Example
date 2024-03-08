@@ -58,7 +58,7 @@ public class HandCoachMoving : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.name == "L_Palm")
+        if (col.name.Contains("_Palm"))
         {
             gameObject.SetActive(false);
         }

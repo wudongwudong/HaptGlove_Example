@@ -33,6 +33,7 @@ public class PhysicsHandTracking : MonoBehaviour
     private Vector3 rotOffsetPalm = new Vector3(0, 0, 0);
     private Vector3 rotOffsetFinger = new Vector3(0, 0, 0);
 
+
     void Start()
     {
         if (handType == HandType.Left)
@@ -142,6 +143,9 @@ public class PhysicsHandTracking : MonoBehaviour
     }
 
 
+    //MovingAverageCalculator mv = new MovingAverageCalculator(23, 1000);
+
+
     void Update()
     {
         try
@@ -149,13 +153,33 @@ public class PhysicsHandTracking : MonoBehaviour
             targePosition = targetJoints[25].position;
             targeRotation = targetJoints[25].rotation * Quaternion.Euler(rotOffsetPalm);
 
-            for (int i = 0; i < 23; i++)
+
+            if (handType == HandType.Left)
             {
-                followingJoints[i].localPosition = targetJoints[i].localPosition;
-                followingJoints[i].localRotation = targetJoints[i].localRotation * Quaternion.Euler(rotOffsetFinger);
+                for (int i = 0; i < 23; i++)
+                {
+                    followingJoints[i].localPosition = targetJoints[i].localPosition;
+                    followingJoints[i].localRotation = targetJoints[i].localRotation * Quaternion.Euler(rotOffsetFinger);
+                }
             }
-            
-            
+            else
+            {
+                for (int i = 0; i < 23; i++)
+                {
+                    // declare a moving average for each joint
+
+                    //mv.AddDataForJoint(i, targetJoints[i].localPosition);
+                    //followingJoints[i].localPosition = mv.CalculateMovingAverageForJoint(i);
+
+                    followingJoints[i].localPosition = targetJoints[i].localPosition;
+                    followingJoints[i].localRotation = targetJoints[i].localRotation * Quaternion.Euler(rotOffsetFinger);
+                }
+            }
+
+
+
+
+
             //for (int i = 3; i < 26; i++)
             //{
             //    if (((i - 6) % 5 != 0) & ((i - 7) % 5 != 0))

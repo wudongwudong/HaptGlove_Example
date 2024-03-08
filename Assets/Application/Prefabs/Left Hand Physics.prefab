@@ -41,7 +41,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43463201023617128}
   m_Material: {fileID: 13400000, guid: e3ca61a026afa2b4c9e822dc8a5ca541, type: 2}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.01
   m_Height: 0.04
@@ -194,11 +194,11 @@ GameObject:
   - component: {fileID: 482027724437863383}
   m_Layer: 6
   m_Name: PalmCollider
-  m_TagString: Untagged
+  m_TagString: RealFingertip
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &482027724437863382
 Transform:
   m_ObjectHideFlags: 0
@@ -404,7 +404,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559098358586642086}
   m_Material: {fileID: 13400000, guid: e3ca61a026afa2b4c9e822dc8a5ca541, type: 2}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.007
   m_Height: 0.025
@@ -876,7 +876,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3256110612694086624}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.1, y: 1.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -948,6 +948,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   haptGloveHandler: {fileID: 3256110612694086631}
   currentHapticObject: {fileID: 0}
+  realFingertip: []
+  ghostFingertip: []
   collider:
   - {fileID: 0}
   - {fileID: 0}
@@ -1608,7 +1610,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8011573281462933758}
   m_Material: {fileID: 13400000, guid: e3ca61a026afa2b4c9e822dc8a5ca541, type: 2}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.015
   m_Height: 0.04

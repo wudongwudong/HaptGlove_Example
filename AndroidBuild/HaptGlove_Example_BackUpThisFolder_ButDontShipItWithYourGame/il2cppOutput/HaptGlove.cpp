@@ -1356,18 +1356,20 @@ struct HapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B  : public MonoBehav
 	BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* ___hapticsChannels_4;
 	// System.Boolean HaptGlove.HapMaterial::isTouch
 	bool ___isTouch_5;
+	// System.Boolean HaptGlove.HapMaterial::iskinematicGrasp
+	bool ___iskinematicGrasp_6;
 	// System.Byte HaptGlove.HapMaterial::targetPressure
-	uint8_t ___targetPressure_6;
+	uint8_t ___targetPressure_7;
 	// System.Boolean HaptGlove.HapMaterial::isVibration
-	bool ___isVibration_7;
+	bool ___isVibration_8;
 	// System.Byte HaptGlove.HapMaterial::vibFrequency
-	uint8_t ___vibFrequency_8;
+	uint8_t ___vibFrequency_9;
 	// System.Byte HaptGlove.HapMaterial::vibIntensity
-	uint8_t ___vibIntensity_9;
+	uint8_t ___vibIntensity_10;
 	// System.Boolean HaptGlove.HapMaterial::isGrasped
-	bool ___isGrasped_10;
+	bool ___isGrasped_11;
 	// UnityEngine.GameObject HaptGlove.HapMaterial::graspedHand
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___graspedHand_11;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___graspedHand_12;
 };
 
 // HaptGlove.HaptGloveHandler
@@ -2799,6 +2801,8 @@ inline bool List_1_Contains_m359254483BE42CAD4DCA8FBAFB87473FB4CF00E1 (List_1_tF
 {
 	return ((  bool (*) (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*, String_t*, const RuntimeMethod*))List_1_Contains_m4C9139C2A6B23E9343D3F87807B32C6E2CFE660D_gshared)(__this, ___0_item, method);
 }
+// System.Void UnityEngine.Rigidbody::set_isKinematic(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_isKinematic_m6C3FD3EA358DADA3B191F2449CF1C4F8B22695ED (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, bool ___0_value, const RuntimeMethod* method) ;
 // T UnityEngine.GameObject::AddComponent<UnityEngine.FixedJoint>()
 inline FixedJoint_tA10A077292A86BA2A2AB3542E3441610055F806E* GameObject_AddComponent_TisFixedJoint_tA10A077292A86BA2A2AB3542E3441610055F806E_m55087CF9E0B9B9026B0844811592B36880109159 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
 {
@@ -5875,18 +5879,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grasping_FixedUpdate_m8C62685D7CBDB7D3B8
 	bool V_0 = false;
 	bool V_1 = false;
 	bool V_2 = false;
-	int32_t V_3 = 0;
-	bool V_4 = false;
+	bool V_3 = false;
+	int32_t V_4 = 0;
 	bool V_5 = false;
 	bool V_6 = false;
-	int32_t V_7 = 0;
+	bool V_7 = false;
 	bool V_8 = false;
-	bool V_9 = false;
+	int32_t V_9 = 0;
 	bool V_10 = false;
-	uint8_t V_11 = 0x0;
+	bool V_11 = false;
 	bool V_12 = false;
-	bool V_13 = false;
+	uint8_t V_13 = 0x0;
 	bool V_14 = false;
+	bool V_15 = false;
+	bool V_16 = false;
 	{
 		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_0 = __this->___colNameList_7;
 		NullCheck(L_0);
@@ -5900,7 +5906,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grasping_FixedUpdate_m8C62685D7CBDB7D3B8
 		bool L_4 = V_0;
 		if (!L_4)
 		{
-			goto IL_00e2;
+			goto IL_0105;
 		}
 	}
 	{
@@ -5909,7 +5915,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grasping_FixedUpdate_m8C62685D7CBDB7D3B8
 		bool L_6 = V_1;
 		if (!L_6)
 		{
-			goto IL_00dc;
+			goto IL_00ff;
 		}
 	}
 	{
@@ -5920,190 +5926,226 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grasping_FixedUpdate_m8C62685D7CBDB7D3B8
 		bool L_9 = V_2;
 		if (!L_9)
 		{
-			goto IL_007e;
+			goto IL_009c;
 		}
 	}
 	{
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10;
-		L_10 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		HapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B* L_10 = __this->___hapticMaterial_6;
 		NullCheck(L_10);
-		FixedJoint_tA10A077292A86BA2A2AB3542E3441610055F806E* L_11;
-		L_11 = GameObject_AddComponent_TisFixedJoint_tA10A077292A86BA2A2AB3542E3441610055F806E_m55087CF9E0B9B9026B0844811592B36880109159(L_10, GameObject_AddComponent_TisFixedJoint_tA10A077292A86BA2A2AB3542E3441610055F806E_m55087CF9E0B9B9026B0844811592B36880109159_RuntimeMethod_var);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12;
-		L_12 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
-		NullCheck(L_12);
-		FixedJoint_tA10A077292A86BA2A2AB3542E3441610055F806E* L_13;
-		L_13 = GameObject_GetComponent_TisFixedJoint_tA10A077292A86BA2A2AB3542E3441610055F806E_mF80F25924B09140F1E6B47BEF4653637F0BB636B(L_12, GameObject_GetComponent_TisFixedJoint_tA10A077292A86BA2A2AB3542E3441610055F806E_mF80F25924B09140F1E6B47BEF4653637F0BB636B_RuntimeMethod_var);
-		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_14 = __this->___targetRigidbody_8;
+		bool L_11 = L_10->___iskinematicGrasp_6;
+		V_3 = L_11;
+		bool L_12 = V_3;
+		if (!L_12)
+		{
+			goto IL_006d;
+		}
+	}
+	{
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_13 = __this->___targetRigidbody_8;
 		NullCheck(L_13);
-		Joint_set_connectedBody_mE9E631476E9D4264E8DC0D6307146F5EB64D3ED4(L_13, L_14, NULL);
+		Rigidbody_set_isKinematic_m6C3FD3EA358DADA3B191F2449CF1C4F8B22695ED(L_13, (bool)0, NULL);
+	}
+
+IL_006d:
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_14;
+		L_14 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		NullCheck(L_14);
+		FixedJoint_tA10A077292A86BA2A2AB3542E3441610055F806E* L_15;
+		L_15 = GameObject_AddComponent_TisFixedJoint_tA10A077292A86BA2A2AB3542E3441610055F806E_m55087CF9E0B9B9026B0844811592B36880109159(L_14, GameObject_AddComponent_TisFixedJoint_tA10A077292A86BA2A2AB3542E3441610055F806E_m55087CF9E0B9B9026B0844811592B36880109159_RuntimeMethod_var);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16;
+		L_16 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		NullCheck(L_16);
+		FixedJoint_tA10A077292A86BA2A2AB3542E3441610055F806E* L_17;
+		L_17 = GameObject_GetComponent_TisFixedJoint_tA10A077292A86BA2A2AB3542E3441610055F806E_mF80F25924B09140F1E6B47BEF4653637F0BB636B(L_16, GameObject_GetComponent_TisFixedJoint_tA10A077292A86BA2A2AB3542E3441610055F806E_mF80F25924B09140F1E6B47BEF4653637F0BB636B_RuntimeMethod_var);
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_18 = __this->___targetRigidbody_8;
+		NullCheck(L_17);
+		Joint_set_connectedBody_mE9E631476E9D4264E8DC0D6307146F5EB64D3ED4(L_17, L_18, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralD863A8A2219FE45D61EBB229960EDC1B75220551, NULL);
 	}
 
-IL_007e:
+IL_009c:
 	{
-		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_15 = __this->___targetRigidbody_8;
-		NullCheck(L_15);
-		HapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B* L_16;
-		L_16 = Component_GetComponent_TisHapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B_m65231F757BCC3D94D8783AC28A88DF54206517BE(L_15, Component_GetComponent_TisHapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B_m65231F757BCC3D94D8783AC28A88DF54206517BE_RuntimeMethod_var);
-		NullCheck(L_16);
-		L_16->___isGrasped_10 = (bool)1;
-		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_17 = __this->___targetRigidbody_8;
-		NullCheck(L_17);
-		HapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B* L_18;
-		L_18 = Component_GetComponent_TisHapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B_m65231F757BCC3D94D8783AC28A88DF54206517BE(L_17, Component_GetComponent_TisHapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B_m65231F757BCC3D94D8783AC28A88DF54206517BE_RuntimeMethod_var);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19;
-		L_19 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
-		NullCheck(L_18);
-		L_18->___graspedHand_11 = L_19;
-		Il2CppCodeGenWriteBarrier((void**)(&L_18->___graspedHand_11), (void*)L_19);
-		__this->___holdState_15 = (bool)1;
-		V_3 = 0;
-		goto IL_00ca;
-	}
-
-IL_00b0:
-	{
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_20 = __this->___realFingertip_10;
-		int32_t L_21 = V_3;
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_19 = __this->___targetRigidbody_8;
+		NullCheck(L_19);
+		HapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B* L_20;
+		L_20 = Component_GetComponent_TisHapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B_m65231F757BCC3D94D8783AC28A88DF54206517BE(L_19, Component_GetComponent_TisHapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B_m65231F757BCC3D94D8783AC28A88DF54206517BE_RuntimeMethod_var);
 		NullCheck(L_20);
-		int32_t L_22 = L_21;
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_23 = (L_20)->GetAt(static_cast<il2cpp_array_size_t>(L_22));
-		NullCheck(L_23);
-		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_24;
-		L_24 = GameObject_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m4CB0FC4E59CE6C91F1106739EF364208A63E2597(L_23, GameObject_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m4CB0FC4E59CE6C91F1106739EF364208A63E2597_RuntimeMethod_var);
+		L_20->___isGrasped_11 = (bool)1;
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_21 = __this->___targetRigidbody_8;
+		NullCheck(L_21);
+		HapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B* L_22;
+		L_22 = Component_GetComponent_TisHapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B_m65231F757BCC3D94D8783AC28A88DF54206517BE(L_21, Component_GetComponent_TisHapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B_m65231F757BCC3D94D8783AC28A88DF54206517BE_RuntimeMethod_var);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_23;
+		L_23 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		NullCheck(L_22);
+		L_22->___graspedHand_12 = L_23;
+		Il2CppCodeGenWriteBarrier((void**)(&L_22->___graspedHand_12), (void*)L_23);
+		__this->___holdState_15 = (bool)1;
+		V_4 = 0;
+		goto IL_00ec;
+	}
+
+IL_00cf:
+	{
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_24 = __this->___realFingertip_10;
+		int32_t L_25 = V_4;
 		NullCheck(L_24);
-		Collider_set_isTrigger_mFCD22F3EB5E28C97863956AB725D53F7F4B7CA78(L_24, (bool)1, NULL);
-		int32_t L_25 = V_3;
-		V_3 = ((int32_t)il2cpp_codegen_add(L_25, 1));
-	}
-
-IL_00ca:
-	{
-		int32_t L_26 = V_3;
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_27 = __this->___realFingertip_10;
+		int32_t L_26 = L_25;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_27 = (L_24)->GetAt(static_cast<il2cpp_array_size_t>(L_26));
 		NullCheck(L_27);
-		V_4 = (bool)((((int32_t)L_26) < ((int32_t)((int32_t)(((RuntimeArray*)L_27)->max_length))))? 1 : 0);
-		bool L_28 = V_4;
-		if (L_28)
-		{
-			goto IL_00b0;
-		}
-	}
-	{
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_28;
+		L_28 = GameObject_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m4CB0FC4E59CE6C91F1106739EF364208A63E2597(L_27, GameObject_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m4CB0FC4E59CE6C91F1106739EF364208A63E2597_RuntimeMethod_var);
+		NullCheck(L_28);
+		Collider_set_isTrigger_mFCD22F3EB5E28C97863956AB725D53F7F4B7CA78(L_28, (bool)1, NULL);
+		int32_t L_29 = V_4;
+		V_4 = ((int32_t)il2cpp_codegen_add(L_29, 1));
 	}
 
-IL_00dc:
+IL_00ec:
 	{
-		goto IL_019c;
-	}
-
-IL_00e2:
-	{
-		bool L_29 = __this->___holdState_15;
-		V_5 = L_29;
-		bool L_30 = V_5;
-		if (!L_30)
-		{
-			goto IL_019b;
-		}
-	}
-	{
-		HapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B* L_31 = __this->___hapticMaterial_6;
+		int32_t L_30 = V_4;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_31 = __this->___realFingertip_10;
 		NullCheck(L_31);
-		bool L_32 = L_31->___isTouch_5;
-		V_6 = (bool)((((int32_t)L_32) == ((int32_t)0))? 1 : 0);
-		bool L_33 = V_6;
-		if (!L_33)
+		V_5 = (bool)((((int32_t)L_30) < ((int32_t)((int32_t)(((RuntimeArray*)L_31)->max_length))))? 1 : 0);
+		bool L_32 = V_5;
+		if (L_32)
 		{
-			goto IL_0147;
+			goto IL_00cf;
 		}
 	}
 	{
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_34;
-		L_34 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
-		NullCheck(L_34);
-		FixedJoint_tA10A077292A86BA2A2AB3542E3441610055F806E* L_35;
-		L_35 = GameObject_GetComponent_TisFixedJoint_tA10A077292A86BA2A2AB3542E3441610055F806E_mF80F25924B09140F1E6B47BEF4653637F0BB636B(L_34, GameObject_GetComponent_TisFixedJoint_tA10A077292A86BA2A2AB3542E3441610055F806E_mF80F25924B09140F1E6B47BEF4653637F0BB636B_RuntimeMethod_var);
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_35, NULL);
-		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_36 = __this->___targetRigidbody_8;
-		NullCheck(L_36);
-		HapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B* L_37;
-		L_37 = Component_GetComponent_TisHapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B_m65231F757BCC3D94D8783AC28A88DF54206517BE(L_36, Component_GetComponent_TisHapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B_m65231F757BCC3D94D8783AC28A88DF54206517BE_RuntimeMethod_var);
-		NullCheck(L_37);
-		L_37->___isGrasped_10 = (bool)0;
-		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_38 = __this->___targetRigidbody_8;
+	}
+
+IL_00ff:
+	{
+		goto IL_01df;
+	}
+
+IL_0105:
+	{
+		bool L_33 = __this->___holdState_15;
+		V_6 = L_33;
+		bool L_34 = V_6;
+		if (!L_34)
+		{
+			goto IL_01de;
+		}
+	}
+	{
+		HapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B* L_35 = __this->___hapticMaterial_6;
+		NullCheck(L_35);
+		bool L_36 = L_35->___isTouch_5;
+		V_7 = (bool)((((int32_t)L_36) == ((int32_t)0))? 1 : 0);
+		bool L_37 = V_7;
+		if (!L_37)
+		{
+			goto IL_018a;
+		}
+	}
+	{
+		HapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B* L_38 = __this->___hapticMaterial_6;
 		NullCheck(L_38);
-		HapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B* L_39;
-		L_39 = Component_GetComponent_TisHapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B_m65231F757BCC3D94D8783AC28A88DF54206517BE(L_38, Component_GetComponent_TisHapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B_m65231F757BCC3D94D8783AC28A88DF54206517BE_RuntimeMethod_var);
-		NullCheck(L_39);
-		L_39->___graspedHand_11 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL;
-		Il2CppCodeGenWriteBarrier((void**)(&L_39->___graspedHand_11), (void*)(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL);
+		bool L_39 = L_38->___iskinematicGrasp_6;
+		V_8 = L_39;
+		bool L_40 = V_8;
+		if (!L_40)
+		{
+			goto IL_014b;
+		}
+	}
+	{
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_41 = __this->___targetRigidbody_8;
+		NullCheck(L_41);
+		Rigidbody_set_isKinematic_m6C3FD3EA358DADA3B191F2449CF1C4F8B22695ED(L_41, (bool)1, NULL);
+	}
+
+IL_014b:
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_42;
+		L_42 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		NullCheck(L_42);
+		FixedJoint_tA10A077292A86BA2A2AB3542E3441610055F806E* L_43;
+		L_43 = GameObject_GetComponent_TisFixedJoint_tA10A077292A86BA2A2AB3542E3441610055F806E_mF80F25924B09140F1E6B47BEF4653637F0BB636B(L_42, GameObject_GetComponent_TisFixedJoint_tA10A077292A86BA2A2AB3542E3441610055F806E_mF80F25924B09140F1E6B47BEF4653637F0BB636B_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_43, NULL);
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_44 = __this->___targetRigidbody_8;
+		NullCheck(L_44);
+		HapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B* L_45;
+		L_45 = Component_GetComponent_TisHapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B_m65231F757BCC3D94D8783AC28A88DF54206517BE(L_44, Component_GetComponent_TisHapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B_m65231F757BCC3D94D8783AC28A88DF54206517BE_RuntimeMethod_var);
+		NullCheck(L_45);
+		L_45->___isGrasped_11 = (bool)0;
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_46 = __this->___targetRigidbody_8;
+		NullCheck(L_46);
+		HapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B* L_47;
+		L_47 = Component_GetComponent_TisHapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B_m65231F757BCC3D94D8783AC28A88DF54206517BE(L_46, Component_GetComponent_TisHapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B_m65231F757BCC3D94D8783AC28A88DF54206517BE_RuntimeMethod_var);
+		NullCheck(L_47);
+		L_47->___graspedHand_12 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&L_47->___graspedHand_12), (void*)(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralD5BD2A91DB3A26A27FD680091AB0FFA7140509FC, NULL);
 	}
 
-IL_0147:
+IL_018a:
 	{
 		__this->___holdState_15 = (bool)0;
-		V_7 = 0;
-		goto IL_0170;
+		V_9 = 0;
+		goto IL_01b3;
 	}
 
-IL_0153:
+IL_0196:
 	{
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_40 = __this->___realFingertip_10;
-		int32_t L_41 = V_7;
-		NullCheck(L_40);
-		int32_t L_42 = L_41;
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_43 = (L_40)->GetAt(static_cast<il2cpp_array_size_t>(L_42));
-		NullCheck(L_43);
-		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_44;
-		L_44 = GameObject_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m4CB0FC4E59CE6C91F1106739EF364208A63E2597(L_43, GameObject_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m4CB0FC4E59CE6C91F1106739EF364208A63E2597_RuntimeMethod_var);
-		NullCheck(L_44);
-		Collider_set_isTrigger_mFCD22F3EB5E28C97863956AB725D53F7F4B7CA78(L_44, (bool)0, NULL);
-		int32_t L_45 = V_7;
-		V_7 = ((int32_t)il2cpp_codegen_add(L_45, 1));
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_48 = __this->___realFingertip_10;
+		int32_t L_49 = V_9;
+		NullCheck(L_48);
+		int32_t L_50 = L_49;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_51 = (L_48)->GetAt(static_cast<il2cpp_array_size_t>(L_50));
+		NullCheck(L_51);
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_52;
+		L_52 = GameObject_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m4CB0FC4E59CE6C91F1106739EF364208A63E2597(L_51, GameObject_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m4CB0FC4E59CE6C91F1106739EF364208A63E2597_RuntimeMethod_var);
+		NullCheck(L_52);
+		Collider_set_isTrigger_mFCD22F3EB5E28C97863956AB725D53F7F4B7CA78(L_52, (bool)0, NULL);
+		int32_t L_53 = V_9;
+		V_9 = ((int32_t)il2cpp_codegen_add(L_53, 1));
 	}
 
-IL_0170:
+IL_01b3:
 	{
-		int32_t L_46 = V_7;
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_47 = __this->___realFingertip_10;
-		NullCheck(L_47);
-		V_8 = (bool)((((int32_t)L_46) < ((int32_t)((int32_t)(((RuntimeArray*)L_47)->max_length))))? 1 : 0);
-		bool L_48 = V_8;
-		if (L_48)
+		int32_t L_54 = V_9;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_55 = __this->___realFingertip_10;
+		NullCheck(L_55);
+		V_10 = (bool)((((int32_t)L_54) < ((int32_t)((int32_t)(((RuntimeArray*)L_55)->max_length))))? 1 : 0);
+		bool L_56 = V_10;
+		if (L_56)
 		{
-			goto IL_0153;
+			goto IL_0196;
 		}
 	}
 	{
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_49 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)5);
-		__this->___hapticStartPosition_20 = L_49;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___hapticStartPosition_20), (void*)L_49);
-		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_50 = (BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4*)(BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4*)SZArrayNew(BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4_il2cpp_TypeInfo_var, (uint32_t)5);
-		__this->___hapticGraspingIsStart_28 = L_50;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___hapticGraspingIsStart_28), (void*)L_50);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_57 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)5);
+		__this->___hapticStartPosition_20 = L_57;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___hapticStartPosition_20), (void*)L_57);
+		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_58 = (BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4*)(BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4*)SZArrayNew(BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4_il2cpp_TypeInfo_var, (uint32_t)5);
+		__this->___hapticGraspingIsStart_28 = L_58;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___hapticGraspingIsStart_28), (void*)L_58);
 	}
 
-IL_019b:
+IL_01de:
 	{
 	}
 
-IL_019c:
+IL_01df:
 	{
-		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_51 = __this->___colNameList_7;
-		NullCheck(L_51);
-		int32_t L_52;
-		L_52 = List_1_get_Count_mB63183A9151F4345A9DD444A7CBE0D6E03F77C7C_inline(L_51, List_1_get_Count_mB63183A9151F4345A9DD444A7CBE0D6E03F77C7C_RuntimeMethod_var);
-		V_9 = (bool)((((int32_t)L_52) == ((int32_t)0))? 1 : 0);
-		bool L_53 = V_9;
-		if (!L_53)
+		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_59 = __this->___colNameList_7;
+		NullCheck(L_59);
+		int32_t L_60;
+		L_60 = List_1_get_Count_mB63183A9151F4345A9DD444A7CBE0D6E03F77C7C_inline(L_59, List_1_get_Count_mB63183A9151F4345A9DD444A7CBE0D6E03F77C7C_RuntimeMethod_var);
+		V_11 = (bool)((((int32_t)L_60) == ((int32_t)0))? 1 : 0);
+		bool L_61 = V_11;
+		if (!L_61)
 		{
-			goto IL_01b9;
+			goto IL_01fc;
 		}
 	}
 	{
@@ -6111,85 +6153,85 @@ IL_019c:
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentHapticObject_9), (void*)(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL);
 	}
 
-IL_01b9:
+IL_01fc:
 	{
-		bool L_54 = __this->___startDeform_16;
-		V_10 = L_54;
-		bool L_55 = V_10;
-		if (!L_55)
+		bool L_62 = __this->___startDeform_16;
+		V_12 = L_62;
+		bool L_63 = V_12;
+		if (!L_63)
 		{
-			goto IL_0226;
+			goto IL_0269;
 		}
 	}
 	{
-		V_11 = (uint8_t)0;
-		goto IL_01fd;
+		V_13 = (uint8_t)0;
+		goto IL_0240;
 	}
 
-IL_01cb:
+IL_020e:
 	{
-		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_56 = __this->___collider_13;
-		uint8_t L_57 = V_11;
-		NullCheck(L_56);
-		uint8_t L_58 = L_57;
-		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_59 = (L_56)->GetAt(static_cast<il2cpp_array_size_t>(L_58));
+		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_64 = __this->___collider_13;
+		uint8_t L_65 = V_13;
+		NullCheck(L_64);
+		uint8_t L_66 = L_65;
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_67 = (L_64)->GetAt(static_cast<il2cpp_array_size_t>(L_66));
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_60;
-		L_60 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_59, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		V_12 = L_60;
-		bool L_61 = V_12;
-		if (!L_61)
+		bool L_68;
+		L_68 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_67, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		V_14 = L_68;
+		bool L_69 = V_14;
+		if (!L_69)
 		{
-			goto IL_01f5;
+			goto IL_0238;
 		}
 	}
 	{
-		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_62 = __this->___collider_13;
-		uint8_t L_63 = V_11;
-		NullCheck(L_62);
-		uint8_t L_64 = L_63;
-		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_65 = (L_62)->GetAt(static_cast<il2cpp_array_size_t>(L_64));
-		uint8_t L_66 = V_11;
-		Grasping_UpdateDeform_m044F8DE689159F8BE7F834384D246770D8137A0D(__this, L_65, L_66, NULL);
-	}
-
-IL_01f5:
-	{
-		uint8_t L_67 = V_11;
-		V_11 = (uint8_t)((int32_t)(uint8_t)((int32_t)il2cpp_codegen_add((int32_t)L_67, 1)));
-	}
-
-IL_01fd:
-	{
-		uint8_t L_68 = V_11;
-		V_13 = (bool)((((int32_t)L_68) < ((int32_t)5))? 1 : 0);
-		bool L_69 = V_13;
-		if (L_69)
-		{
-			goto IL_01cb;
-		}
-	}
-	{
-		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_70 = __this->___colNameList_7;
+		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_70 = __this->___collider_13;
+		uint8_t L_71 = V_13;
 		NullCheck(L_70);
-		int32_t L_71;
-		L_71 = List_1_get_Count_mB63183A9151F4345A9DD444A7CBE0D6E03F77C7C_inline(L_70, List_1_get_Count_mB63183A9151F4345A9DD444A7CBE0D6E03F77C7C_RuntimeMethod_var);
-		V_14 = (bool)((((int32_t)L_71) == ((int32_t)0))? 1 : 0);
-		bool L_72 = V_14;
-		if (!L_72)
+		uint8_t L_72 = L_71;
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_73 = (L_70)->GetAt(static_cast<il2cpp_array_size_t>(L_72));
+		uint8_t L_74 = V_13;
+		Grasping_UpdateDeform_m044F8DE689159F8BE7F834384D246770D8137A0D(__this, L_73, L_74, NULL);
+	}
+
+IL_0238:
+	{
+		uint8_t L_75 = V_13;
+		V_13 = (uint8_t)((int32_t)(uint8_t)((int32_t)il2cpp_codegen_add((int32_t)L_75, 1)));
+	}
+
+IL_0240:
+	{
+		uint8_t L_76 = V_13;
+		V_15 = (bool)((((int32_t)L_76) < ((int32_t)5))? 1 : 0);
+		bool L_77 = V_15;
+		if (L_77)
 		{
-			goto IL_0225;
+			goto IL_020e;
+		}
+	}
+	{
+		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_78 = __this->___colNameList_7;
+		NullCheck(L_78);
+		int32_t L_79;
+		L_79 = List_1_get_Count_mB63183A9151F4345A9DD444A7CBE0D6E03F77C7C_inline(L_78, List_1_get_Count_mB63183A9151F4345A9DD444A7CBE0D6E03F77C7C_RuntimeMethod_var);
+		V_16 = (bool)((((int32_t)L_79) == ((int32_t)0))? 1 : 0);
+		bool L_80 = V_16;
+		if (!L_80)
+		{
+			goto IL_0268;
 		}
 	}
 	{
 		__this->___startDeform_16 = (bool)0;
 	}
 
-IL_0225:
+IL_0268:
 	{
 	}
 
-IL_0226:
+IL_0269:
 	{
 		return;
 	}
@@ -7622,7 +7664,7 @@ IL_0125:
 		V_3 = L_50;
 		HapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B* L_51 = __this->___hapticMaterial_6;
 		NullCheck(L_51);
-		bool L_52 = L_51->___isVibration_7;
+		bool L_52 = L_51->___isVibration_8;
 		V_10 = L_52;
 		bool L_53 = V_10;
 		if (!L_53)
@@ -7633,11 +7675,11 @@ IL_0125:
 	{
 		HapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B* L_54 = __this->___hapticMaterial_6;
 		NullCheck(L_54);
-		uint8_t L_55 = L_54->___vibFrequency_8;
+		uint8_t L_55 = L_54->___vibFrequency_9;
 		__this->___vibFrequency_23 = L_55;
 		HapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B* L_56 = __this->___hapticMaterial_6;
 		NullCheck(L_56);
-		uint8_t L_57 = L_56->___vibIntensity_9;
+		uint8_t L_57 = L_56->___vibIntensity_10;
 		__this->___vibIntensity_24 = L_57;
 		HaptGloveHandler_tDA525AD897FA0F7FD7D5F2621FD2E842BE458BC3* L_58 = __this->___haptGloveHandler_4;
 		NullCheck(L_58);
@@ -7656,7 +7698,7 @@ IL_0183:
 	{
 		HapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B* L_64 = __this->___hapticMaterial_6;
 		NullCheck(L_64);
-		uint8_t L_65 = L_64->___targetPressure_6;
+		uint8_t L_65 = L_64->___targetPressure_7;
 		V_2 = L_65;
 	}
 
@@ -7736,7 +7778,7 @@ IL_020f:
 	{
 		HapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B* L_84 = __this->___hapticMaterial_6;
 		NullCheck(L_84);
-		bool L_85 = L_84->___isVibration_7;
+		bool L_85 = L_84->___isVibration_8;
 		V_15 = L_85;
 		bool L_86 = V_15;
 		if (!L_86)
@@ -7908,7 +7950,7 @@ IL_031c:
 	{
 		HapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B* L_136 = __this->___hapticMaterial_6;
 		NullCheck(L_136);
-		bool L_137 = L_136->___isVibration_7;
+		bool L_137 = L_136->___isVibration_8;
 		V_23 = L_137;
 		bool L_138 = V_23;
 		if (!L_138)
@@ -8016,7 +8058,7 @@ IL_03d8:
 	{
 		HapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B* L_174 = __this->___hapticMaterial_6;
 		NullCheck(L_174);
-		bool L_175 = L_174->___isGrasped_10;
+		bool L_175 = L_174->___isGrasped_11;
 		V_29 = L_175;
 		bool L_176 = V_29;
 		if (!L_176)
@@ -8058,7 +8100,7 @@ IL_0448:
 	{
 		HapMaterial_t367CDFC3F346AE55D334CD54B662FEBF6555924B* L_181 = __this->___hapticMaterial_6;
 		NullCheck(L_181);
-		bool L_182 = L_181->___isVibration_7;
+		bool L_182 = L_181->___isVibration_8;
 		V_31 = L_182;
 		bool L_183 = V_31;
 		if (!L_183)
@@ -8971,12 +9013,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapMaterial__ctor_mC07DB7CD18495622E008F
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_1, L_2, NULL);
 		__this->___hapticsChannels_4 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___hapticsChannels_4), (void*)L_1);
-		__this->___targetPressure_6 = (uint8_t)0;
-		__this->___vibFrequency_8 = (uint8_t)((int32_t)10);
-		__this->___vibIntensity_9 = (uint8_t)1;
-		__this->___isGrasped_10 = (bool)0;
-		__this->___graspedHand_11 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___graspedHand_11), (void*)(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL);
+		__this->___targetPressure_7 = (uint8_t)0;
+		__this->___vibFrequency_9 = (uint8_t)((int32_t)10);
+		__this->___vibIntensity_10 = (uint8_t)1;
+		__this->___isGrasped_11 = (bool)0;
+		__this->___graspedHand_12 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___graspedHand_12), (void*)(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
@@ -13564,7 +13606,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HaptGloveHandler__ctor_m857E656A9C0FA5D3
 	}
 	{
 		__this->___whichHand_8 = 0;
-		__this->___sourcePres_13 = (uint8_t)((int32_t)65);
+		__this->___sourcePres_13 = (uint8_t)((int32_t)80);
 		__this->___deviceName_14 = _stringLiteral42D5F92265EBD5B2166603EB6BED9706E2832339;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___deviceName_14), (void*)_stringLiteral42D5F92265EBD5B2166603EB6BED9706E2832339);
 		__this->___btText_15 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;

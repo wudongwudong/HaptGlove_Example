@@ -183,7 +183,7 @@ public class Balloon_PneuClutch : MonoBehaviour
 
                     GetComponent<Rigidbody>().isKinematic = true;
                     this.transform.localScale = Vector3.zero;
-                    Destroy(gameObject, 0.1f); 
+                    Destroy(gameObject, 0.1f);
                 }
                 else if (avgSqueezeRatio >= (2f / 3f) * squeezeThreshold)
                 {
