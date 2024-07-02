@@ -10,7 +10,7 @@ public class HaptGloveUI : MonoBehaviour
     //public GameObject toggleLeft, toggleRight, toggleHandMesh;
     //public GameObject buttonBLE, buttonPump, buttonExhause, buttonDropObject;
 
-    public GameObject handLeft, handRight;
+    public GameObject handLeft, handRight, sceneObject;
 
     public List<string> controlledHandsList = new List<string>();
 
@@ -59,6 +59,9 @@ public class HaptGloveUI : MonoBehaviour
                 break;
             case "ButtonHandMesh":
                 HandMeshButtonOnClick();
+                break;
+            case "ButtonResetScene":
+                ResetSceneButtonOnClick();
                 break;
         }
     }
@@ -163,6 +166,19 @@ public class HaptGloveUI : MonoBehaviour
             }
         }
 
+    }
+
+    private void ResetSceneButtonOnClick()
+    {
+        GameObject previousObject = GameObject.Find(sceneObject.name);
+        if (previousObject!= null)
+        {
+            Destroy(previousObject);
+        }
+        GameObject currentObject = Instantiate(sceneObject);
+        currentObject.name = "DemoProps";
+        currentObject.transform.position = new Vector3(0, 0, 0.6f);
+        currentObject.transform.rotation = Quaternion.identity;
     }
 
 }
