@@ -20,7 +20,14 @@ public class HaptGloveUI : MonoBehaviour
     {
         if (log != null)
         {
-            log.text = handRight.GetComponent<HaptGloveHandler>().btText;
+            if (controlledHandsList.Contains("Left"))
+            {
+                log.text = handLeft.GetComponent<HaptGloveHandler>().btText;
+            }
+            else
+            {
+                log.text = handRight.GetComponent<HaptGloveHandler>().btText;
+            }
         }
         else
         {
