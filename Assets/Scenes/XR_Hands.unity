@@ -589,7 +589,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &196942796
 Transform:
   m_ObjectHideFlags: 0
@@ -2862,6 +2862,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HandRight
       objectReference: {fileID: 0}
+    - target: {fileID: 5336186961340876117, guid: e664d688bb65af54a9146781a2b6f500, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8449720109929391434, guid: e664d688bb65af54a9146781a2b6f500, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -2885,6 +2889,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4425616221073343739, guid: 6abc76b40b133154a91d14528cc20ba5, type: 3}
       propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336186960391751790, guid: 6abc76b40b133154a91d14528cc20ba5, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8795879930519852934, guid: 6abc76b40b133154a91d14528cc20ba5, type: 3}
@@ -3719,7 +3727,7 @@ MonoBehaviour:
   m_Camera: {fileID: 52660987}
   m_OriginBaseGameObject: {fileID: 2068784615}
   m_CameraFloorOffsetObject: {fileID: 1015126099}
-  m_RequestedTrackingOriginMode: 1
+  m_RequestedTrackingOriginMode: 2
   m_CameraYOffset: 1.7
 --- !u!4 &2068784617
 Transform:
@@ -3745,7 +3753,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068784615}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd9f82377aeb9704193bd866d119aaa5, type: 3}
   m_Name: 
