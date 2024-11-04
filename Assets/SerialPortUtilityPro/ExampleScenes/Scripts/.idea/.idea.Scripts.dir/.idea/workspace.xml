@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2a302dcf-da2a-47e9-a493-324ac0c1153c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../BluetoothAPI/Samples/Scan and Connect/ScanAndConnect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../BluetoothAPI/Samples/Scan and Connect/ScanAndConnect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BluetoothAPI/Scripts/BLEServicesManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../BluetoothAPI/Scripts/BLEServicesManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BluetoothAPI/Scripts/BTManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../BluetoothAPI/Scripts/BTManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BluetoothAPI/Scripts/ScanSceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../BluetoothAPI/Scripts/ScanSceneManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BluetoothAPI/Scripts/manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../BluetoothAPI/Scripts/manager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BluetoothAPI/changelogs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../BluetoothAPI/changelogs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Plugins/Android/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Plugins/Android/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Plugins/Android/ArduinoBluetoothAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Plugins/Android/ArduinoBluetoothAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Plugins/Android/Editor/OculusManifestBTFixer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Plugins/Android/Editor/OculusManifestBTFixer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Plugins/Android/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Plugins/Android/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Plugins/Android/classes.jar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Plugins/Android/classes.jar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Plugins/ArduinoBluetoothAPI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Plugins/ArduinoBluetoothAPI.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Plugins/BluetoothUnityAPI.bundle.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Plugins/BluetoothUnityAPI.bundle.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Plugins/BluetoothUnityAPI.bundle/Contents/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Plugins/BluetoothUnityAPI.bundle/Contents/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Plugins/BluetoothUnityAPI.bundle/Contents/MacOS/BluetoothUnityAPI" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Plugins/BluetoothUnityAPI.bundle/Contents/MacOS/BluetoothUnityAPI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Plugins/BluetoothUnityAPI.bundle/Contents/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Plugins/BluetoothUnityAPI.bundle/Contents/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Plugins/HaptGlove.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Plugins/HaptGlove.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Plugins/WSA/ArduinoBluetoothAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Plugins/WSA/ArduinoBluetoothAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Plugins/iOS/BluetoothUnityAPI/Source/BluetoothUnityAPI.framework/BluetoothUnityAPI" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Plugins/iOS/BluetoothUnityAPI/Source/BluetoothUnityAPI.framework/BluetoothUnityAPI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Plugins/iOS/BluetoothUnityAPI/Source/BluetoothUnityAPI.framework/Headers/BluetoothUnityAPI-Swift.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Plugins/iOS/BluetoothUnityAPI/Source/BluetoothUnityAPI.framework/Headers/BluetoothUnityAPI-Swift.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Plugins/iOS/BluetoothUnityAPI/Source/BluetoothUnityAPI.framework/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Plugins/iOS/BluetoothUnityAPI/Source/BluetoothUnityAPI.framework/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Plugins/iOS/BluetoothUnityAPI/Source/BluetoothUnityAPI.framework/Modules/BluetoothUnityAPI.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Plugins/iOS/BluetoothUnityAPI/Source/BluetoothUnityAPI.framework/Modules/BluetoothUnityAPI.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Plugins/iOS/BluetoothUnityAPI/Source/BluetoothUnityAPI.framework/Modules/BluetoothUnityAPI.swiftmodule/arm64-apple-ios.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Plugins/iOS/BluetoothUnityAPI/Source/BluetoothUnityAPI.framework/Modules/BluetoothUnityAPI.swiftmodule/arm64-apple-ios.swiftdoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Plugins/iOS/BluetoothUnityAPI/Source/BluetoothUnityAPI.framework/Modules/BluetoothUnityAPI.swiftmodule/arm64-apple-ios.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Plugins/iOS/BluetoothUnityAPI/Source/BluetoothUnityAPI.framework/Modules/BluetoothUnityAPI.swiftmodule/arm64-apple-ios.swiftmodule" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Plugins/iOS/BluetoothUnityAPI/Source/BluetoothUnityAPI.framework/Modules/module.modulemap" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Plugins/iOS/BluetoothUnityAPI/Source/BluetoothUnityAPI.framework/Modules/module.modulemap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Scenes/XR_Hands.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Scenes/XR_Hands.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../XR/Settings/OpenXR Package Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XR/Settings/OpenXR Package Settings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ProjectSettings/ProjectSettings.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/SPUPTestScriptSimple.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2nbEI3G4rWplIzVSByPxlwgpRbb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Pico&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/areeb/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/areeb/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache&quot;,
+      &quot;/Users/areeb/.local/share/Symbols/src&quot;
+    ]
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2a302dcf-da2a-47e9-a493-324ac0c1153c" name="Changes" comment="" />
+      <created>1729233292074</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729233292074</updated>
+      <workItem from="1729233293874" duration="1236000" />
+      <workItem from="1729752785706" duration="25000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

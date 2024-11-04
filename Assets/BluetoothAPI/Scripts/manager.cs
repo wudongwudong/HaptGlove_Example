@@ -19,7 +19,7 @@ public class manager : MonoBehaviour {
 	string received_message;
 
 	void Start () {
-		deviceName = "raspberrypi"; //bluetooth should be turned ON;
+		deviceName = "HC-05"; //bluetooth should be turned ON;
 		try
 		{	
 			bluetoothHelper = BluetoothHelper.GetInstance(deviceName);
@@ -32,7 +32,6 @@ public class manager : MonoBehaviour {
 			//if we received "Hi\nHow are you?"
 			//then they are 2 messages : "Hi" and "How are you?"
 
-			
 			// bluetoothHelper.setLengthBasedStream();
 			/*
 			will received messages based on the length provided, this is useful in transfering binary data

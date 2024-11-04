@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -839,6 +839,196 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259542434}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &366854321
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 366854323}
+  - component: {fileID: 366854322}
+  m_Layer: 0
+  m_Name: RightHandSerial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &366854322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366854321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c53a53d4c59daf742b7221e854c30bb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsAutoOpen: 1
+  OpenMethod: 1
+  ReadProtocol: 1
+  BaudRate: 115200
+  Parity: 0
+  StopBit: 0
+  DataBit: 8
+  RecvDiscardNull: 0
+  AutoRTSCTSHandshake: 0
+  StartEnableDTR: 1
+  DtrEnabled: 0
+  RtsEnabled: 0
+  Skip: 0
+  BluetoothSSPNoServerMode: 0
+  FeedCode: <CR><LF>
+  SplitCode: ','
+  FixedFeedCount: 10
+  UpdateProcessing: 0
+  ReadCompleteEventObject:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2166340598918909663}
+        m_TargetAssemblyTypeName: SPUPTestScriptSimple, Assembly-CSharp
+        m_MethodName: ReadStreamingBinary
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  ReadCompleteEventObjectType: 
+  ReadClassMembersObject: {fileID: 0}
+  SystemEventObject:
+    m_PersistentCalls:
+      m_Calls: []
+  ExternalConfigPath: 1
+  ExternalConfigFileName: serial_config.txt
+  VendorID_string: 
+  ProductID_string: 
+  SerialNumber_search_string: 
+  EnableTrans: 1
+  DebugConsoleMonitor: 0
+  ExternalConfig: 0
+  ExpandConfig: 1
+  ExpandSPMonitor: 0
+  ExpandEventConfig: 0
+  LicenseEmail: 
+  LicenseCode: 
+--- !u!4 &366854323
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366854321}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.37329346, y: -0.055435658, z: 1.9962656}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &385777763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 385777765}
+  - component: {fileID: 385777764}
+  m_Layer: 0
+  m_Name: LeftHandSerial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &385777764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385777763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c53a53d4c59daf742b7221e854c30bb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsAutoOpen: 1
+  OpenMethod: 1
+  ReadProtocol: 1
+  BaudRate: 115200
+  Parity: 0
+  StopBit: 0
+  DataBit: 8
+  RecvDiscardNull: 0
+  AutoRTSCTSHandshake: 0
+  StartEnableDTR: 1
+  DtrEnabled: 0
+  RtsEnabled: 0
+  Skip: 0
+  BluetoothSSPNoServerMode: 0
+  FeedCode: <CR><LF>
+  SplitCode: ','
+  FixedFeedCount: 10
+  UpdateProcessing: 0
+  ReadCompleteEventObject:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3134653708416068554}
+        m_TargetAssemblyTypeName: SPUPTestScriptSimple, Assembly-CSharp
+        m_MethodName: ReadStreamingBinary
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  ReadCompleteEventObjectType: 
+  ReadClassMembersObject: {fileID: 0}
+  SystemEventObject:
+    m_PersistentCalls:
+      m_Calls: []
+  ExternalConfigPath: 1
+  ExternalConfigFileName: serial_config.txt
+  VendorID_string: 
+  ProductID_string: 
+  SerialNumber_search_string: 
+  EnableTrans: 1
+  DebugConsoleMonitor: 0
+  ExternalConfig: 0
+  ExpandConfig: 1
+  ExpandSPMonitor: 0
+  ExpandEventConfig: 0
+  LicenseEmail: 
+  LicenseCode: 
+--- !u!4 &385777765
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385777763}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.37329346, y: -0.055435658, z: 1.9962656}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &512795344
 GameObject:
   m_ObjectHideFlags: 0
@@ -4058,15 +4248,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2773047444348528986, guid: 00ca88f8964ae1946adbd257b0c4d575, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.1
+      value: -0.224
       objectReference: {fileID: 0}
     - target: {fileID: 2773047444348528986, guid: 00ca88f8964ae1946adbd257b0c4d575, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2
+      value: 1.106
       objectReference: {fileID: 0}
     - target: {fileID: 2773047444348528986, guid: 00ca88f8964ae1946adbd257b0c4d575, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.051
       objectReference: {fileID: 0}
     - target: {fileID: 2773047444348528986, guid: 00ca88f8964ae1946adbd257b0c4d575, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4099,6 +4289,18 @@ PrefabInstance:
     - target: {fileID: 3256110612694086624, guid: 00ca88f8964ae1946adbd257b0c4d575, type: 3}
       propertyPath: m_Name
       value: Left Hand Physics
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256110612694086625, guid: 00ca88f8964ae1946adbd257b0c4d575, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256110612694086628, guid: 00ca88f8964ae1946adbd257b0c4d575, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256110612694086631, guid: 00ca88f8964ae1946adbd257b0c4d575, type: 3}
+      propertyPath: commProtocol
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00ca88f8964ae1946adbd257b0c4d575, type: 3}
@@ -4180,6 +4382,33 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8296928546713058839, guid: 40f27131a29b8a1498e8a142827d00a7, type: 3}
   m_PrefabInstance: {fileID: 7869195657153654977}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2166340598918909663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539021475009385580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75183135089a8ad4ebb99cba7a48be68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serialPort: {fileID: 366854322}
+  writeSimple: 49
+  writeList: 50
+  writeDictionary: 51
+  writeBinary: 52
+  writeHelloWorld: 104
+  HaptGlove: {fileID: 2166340598918909655}
+  leftHands:
+  - 02376484
+  - 0237648F
+  rightHands:
+  - 023764AC
+  - 023753EC
+  - 023763EC
+  detected: 0
 --- !u!1 &3134653708416068546 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3256110612694086624, guid: 00ca88f8964ae1946adbd257b0c4d575, type: 3}
@@ -4201,6 +4430,33 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2773047444348528986, guid: 00ca88f8964ae1946adbd257b0c4d575, type: 3}
   m_PrefabInstance: {fileID: 482027724370778146}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3134653708416068554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3134653708416068546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75183135089a8ad4ebb99cba7a48be68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serialPort: {fileID: 385777764}
+  writeSimple: 49
+  writeList: 50
+  writeDictionary: 51
+  writeBinary: 52
+  writeHelloWorld: 104
+  HaptGlove: {fileID: 3134653708416068549}
+  leftHands:
+  - 02376484
+  - 0237648F
+  rightHands:
+  - 023764AC
+  - 023753EC
+  - 023763EC
+  detected: 0
 --- !u!1001 &7869195657153654977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4208,21 +4464,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 13566686}
     m_Modifications:
+    - target: {fileID: 8296928546713058838, guid: 40f27131a29b8a1498e8a142827d00a7, type: 3}
+      propertyPath: commProtocol
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8296928546713058839, guid: 40f27131a29b8a1498e8a142827d00a7, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8296928546713058839, guid: 40f27131a29b8a1498e8a142827d00a7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.1
+      value: 0.185
       objectReference: {fileID: 0}
     - target: {fileID: 8296928546713058839, guid: 40f27131a29b8a1498e8a142827d00a7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2
+      value: 1.261
       objectReference: {fileID: 0}
     - target: {fileID: 8296928546713058839, guid: 40f27131a29b8a1498e8a142827d00a7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.118
       objectReference: {fileID: 0}
     - target: {fileID: 8296928546713058839, guid: 40f27131a29b8a1498e8a142827d00a7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4251,6 +4511,14 @@ PrefabInstance:
     - target: {fileID: 8296928546713058839, guid: 40f27131a29b8a1498e8a142827d00a7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296928546713058840, guid: 40f27131a29b8a1498e8a142827d00a7, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296928546713058841, guid: 40f27131a29b8a1498e8a142827d00a7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8678238713648604333, guid: 40f27131a29b8a1498e8a142827d00a7, type: 3}
       propertyPath: m_Name

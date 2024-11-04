@@ -22,6 +22,8 @@ public class ScanSceneManager : MonoBehaviour
     {
         try
         {
+            BluetoothHelper.BLE_AS_CLIENT = true;
+            BluetoothHelper.BLE_SERVER_IP = "192.168.1.103";
             BluetoothHelper.BLE = true;  //use Bluetooth Low Energy Technology
             bluetoothHelper = BluetoothHelper.GetInstance();
             bluetoothHelper.OnConnected += OnConnected;

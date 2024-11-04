@@ -20,6 +20,9 @@ public class ScanAndConnect : MonoBehaviour
         try
         {
             BluetoothHelper.BLE = true;
+            BluetoothHelper.BLE_AS_CLIENT=true;
+            BluetoothHelper.ASYNC_EVENTS = true;
+            BluetoothHelper.BLE_SERVER_IP="192.168.1.106";
             helper = BluetoothHelper.GetInstance();
             helper.OnConnected += OnConnected;
             helper.OnConnectionFailed += OnConnectionFailed;
@@ -45,6 +48,7 @@ public class ScanAndConnect : MonoBehaviour
     {
         this.isScanning = false;
         this.devices = devices;
+        Debug.Log("scanning ended lost");
     }
 
     void OnConnected(BluetoothHelper helper)

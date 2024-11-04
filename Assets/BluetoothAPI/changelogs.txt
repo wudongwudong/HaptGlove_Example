@@ -1,3 +1,5 @@
++ 5.6.1
+    - Fix for windows platform where devices names are shown incorrectly
 + 5.5
     - Location permission is not a requirement for BLE
     - Added new sample scenes
