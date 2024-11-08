@@ -1,6 +1,6 @@
 ## This project is an example project testing the serial communication of the HEXR glove with the PICO headset.
 
-### On wearing the glove
+### Instructions on wearing the glove and turning it on (Check the image below to see how it looks like).
 
 1. Wear the battery unit and tighten it.
 2. Wear the control unit and tighten it.
@@ -10,7 +10,7 @@
 6. Click the button to turn on.
 
 
-### On removal of the glove
+### Instructions onn removal of the glove and turning it off.
 
 1. Disconnect the magnetic connector from the controller unit.
 2. Loosen the bands and slip your hand/s out.
@@ -28,6 +28,6 @@ glove to interact with your device. To that, please check allow.
 Finally, the current iteration of the app expects that the glove will remain connected. If for some reason, the glove is 
 disconnected, **please restart the app and connect the glove again.**
 
-
+![Wearing HEXR Glove][wearingHexr.jpg]
 
 Happy experimenting!
