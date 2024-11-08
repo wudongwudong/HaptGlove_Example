@@ -2,23 +2,23 @@
 
 ### Instructions on wearing the glove and turning it on (Check the image below to see how it looks like).
 
-1. Wear the battery unit and tighten it.
-2. Wear the control unit and tighten it.
-3. Connect the battery with the control unit.
-4. Wear the glove and make sure your fingertips are all the way in.
-5. Connect the magnetic connector to the control unit and push it in.
-6. Click the button to turn on.
+1. Wear the battery unit and tighten the velcro strap.
+2. Wear the control unit and tighten the velcro strap.
+3. Connect the battery to the controller unit.
+4. Wear the glove/s and and push the glove inwards so that the fingertips reach the ends.
+5. Connect the magnetic connector to the controller unit and push it in.
+6. Push the button down to turn the glove on.
 
 ![Wearing HEXR Glove](IMG_9525.jpg)
 
 
 ### Instructions on removal of the glove and turning it off.
 
-1. Disconnect the magnetic connector from the controller unit.
-2. Loosen the bands and slip your hand/s out.
-3. Press and hold the button until you see the green light go out.
-3. Unplug the battery.
-4. Prepare for charging, if needed.
+1. Disconnect the magnetic connector from the controller unit and take the glove/s out.
+2. Loosen the velcro straps and slip your hand/s out.
+3. Push down the button until you see the green light go out.
+4. Unplug the battery.
+5. Prepare for charging, if needed.
 
 ### Instructions to use the app with the glove
 
