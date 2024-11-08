@@ -9,8 +9,10 @@
 5. Connect the magnetic connector to the control unit and push it in.
 6. Click the button to turn on.
 
+![Wearing HEXR Glove](wearingHexr.jpg)
 
-### Instructions onn removal of the glove and turning it off.
+
+### Instructions on removal of the glove and turning it off.
 
 1. Disconnect the magnetic connector from the controller unit.
 2. Loosen the bands and slip your hand/s out.
@@ -28,6 +30,6 @@ glove to interact with your device. To that, please check allow.
 Finally, the current iteration of the app expects that the glove will remain connected. If for some reason, the glove is 
 disconnected, **please restart the app and connect the glove again.**
 
-![Wearing HEXR Glove](wearingHexr.jpg)
+
 
 Happy experimenting!
