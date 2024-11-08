@@ -1,8 +1,10 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
 using HaptGlove;
+using TMPro;
+
 public class SPUPTestScriptSimple : MonoBehaviour
 {
 	//var
@@ -19,28 +21,21 @@ public class SPUPTestScriptSimple : MonoBehaviour
 	public List<string> leftHands = new List<String>{ "02376484", "0237648F" };
 	
 	public List<string> rightHands = new List<String> { "023764AC" , "023753EC", "023763EC"};
-
-	
 	public bool detected = false;
-	
 	private float detectHandCooldown = 1.0f; // 1 second cooldown
 	private float detectHandTimer = 0f; 
 
 	// Use this for initialization
 	void Start ()
 	{
-        // LogConnectedDeviceList();
         DetectHand();
 	}
 
     // Update is called once per frame
     void Update ()
 	{
-		if (!serialPort.IsConnected())
-		{
-			detected = false;
-		}
-		
+        
+		CheckConnection();
 		if (detected == false)
 		{
 			detectHandTimer += Time.deltaTime;
@@ -144,6 +139,16 @@ public class SPUPTestScriptSimple : MonoBehaviour
 		{
 			byte[] data = HaptGlove.serialData.Dequeue();
 			Debug.Log("Processing byte array inside Serial Port Fixed Update, " + BitConverter.ToString(data) + " " +  $"{HaptGlove.whichHand}");
+
+            if (HaptGlove.whichHand == HaptGloveHandler.HandType.Left)
+            {
+				Debug.Log("Writing data to left hand: " + BitConverter.ToString(data));
+            }
+            else if (HaptGlove.whichHand == HaptGloveHandler.HandType.Right)
+            {
+				Debug.Log("Writing data to right hand: " + BitConverter.ToString(data));
+			}
+            
 			serialPort.Write(data);
 		}
 	}
@@ -158,33 +163,14 @@ public class SPUPTestScriptSimple : MonoBehaviour
 	//for Streaming Binary Data
 	public void ReadStreamingBinary(object data)
 	{
-		// Debug.Log("This is the data in raw form for binary " + data);
-		// var bin = data as byte[];
-		// Debug.Log("This is the data in raw obtaines for binary " + bin);
-		// string byteArray = System.BitConverter.ToString(bin);
-		// Debug.Log("This is the binary response after processing" + byteArray);
-
-		// string byteArray = System.BitConverter.ToString(bin).Replace("-", " ");
-		// Debug.Log("This is the byteArray : " + $"{byteArray}");
-
-
-
-		// Debug.Log("Binary Streaming: " + data);
-		byte[] bin = data as byte[];
 		
-		// Check if the cast was successful (i.e., data was indeed a byte array)
+		byte[] bin = data as byte[];
+        
 		if (bin != null)
 		{
-			// Convert the byte array to a hexadecimal string and print it
 			string byteArrayHex = BitConverter.ToString(bin).Replace("-", " ");
 			HaptGlove.haptics.DecodeGloveData(bin);
 			int[] pressure = HaptGlove.GetAirPressure();
-			for (int i = 0; i < 7; i++)
-			{
-				// Debug.Log("Pressure Value" + pressure[i]);
-			}
-			// Debug.Log("Pressure Values" + pressure);
-			// Debug.Log("Received byte array (hex): " + byteArrayHex);
 		}
 		else
 		{
@@ -209,8 +195,6 @@ public class SPUPTestScriptSimple : MonoBehaviour
 
 		// This is heavy!
 		Debug.Log("complate process" + header);
-		//mainData[]
-		//Debug.Log(checksumINT);
 	}
 
 	//for String data
@@ -234,8 +218,28 @@ public class SPUPTestScriptSimple : MonoBehaviour
         foreach (SerialPortUtility.SerialPortUtilityPro.DeviceInfo d in devicelist)
         {
             Debug.Log("VendorID:" + d.Vendor + " DeviceName:" + d.SerialNumber);
-            
         }
+    }
+
+    public void CheckConnection()
+    {
+	    List<string> list = new List<String>();
+	    SerialPortUtility.SerialPortUtilityPro.DeviceInfo[] devicelist =
+		    SerialPortUtility.SerialPortUtilityPro.GetConnectedDeviceList(serialPort.OpenMethod);
+	
+	    if (serialPort != null)
+	    {
+		    foreach (SerialPortUtility.SerialPortUtilityPro.DeviceInfo d in devicelist)
+		    {
+			    list.Add(d.SerialNumber);
+		    }
+		    
+		    if (!list.Contains(serialPort.SerialNumber))
+		    {
+			    detected = false;
+		    }
+	    }
+        
     }
 
     public bool DetectHand()
@@ -250,10 +254,12 @@ public class SPUPTestScriptSimple : MonoBehaviour
 			    
 			    if (leftHands.Contains(d.SerialNumber))
 			    {
-				    // HaptGlove.whichHand = HaptGloveHandler.HandType.Left;
 				    Debug.Log("Hand Detected : " + HaptGlove.whichHand);
-				    return true;
-				    // break;
+					serialPort.VendorID = d.Vendor;
+                    serialPort.ProductID = d.Product;
+                    serialPort.SerialNumber = d.SerialNumber;
+					serialPort.Open();
+					return true;
 			    }
 		    }
 	    }
@@ -262,13 +268,14 @@ public class SPUPTestScriptSimple : MonoBehaviour
 	    {
 		    foreach (SerialPortUtility.SerialPortUtilityPro.DeviceInfo d in devicelist)
 		    {
-			    // Debug.Log("Inside Detect hand function: " + d.SerialNumber);
 			    if (rightHands.Contains(d.SerialNumber))
 			    {
-				    // HaptGlove.whichHand = HaptGloveHandler.HandType.Right;
 				    Debug.Log("Hand Detected : " + HaptGlove.whichHand);
-				    return true;
-				    // break;
+                    serialPort.VendorID = d.Vendor;
+                    serialPort.ProductID = d.Product;
+                    serialPort.SerialNumber = d.SerialNumber;
+                    serialPort.Open();
+					return true;
 			    }
 		    }
 	    }
