@@ -28,6 +28,6 @@ glove to interact with your device. To that, please check allow.
 Finally, the current iteration of the app expects that the glove will remain connected. If for some reason, the glove is 
 disconnected, **please restart the app and connect the glove again.**
 
-![Wearing HEXR Glove][wearingHexr.jpg]
+![Wearing HEXR Glove](wearingHexr.jpg)
 
 Happy experimenting!
