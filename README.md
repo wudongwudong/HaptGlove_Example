@@ -9,7 +9,7 @@
 5. Connect the magnetic connector to the control unit and push it in.
 6. Click the button to turn on.
 
-![Wearing HEXR Glove](wearingHexr.jpg)
+![Wearing HEXR Glove](IMG_9525.jpg)
 
 
 ### Instructions on removal of the glove and turning it off.
