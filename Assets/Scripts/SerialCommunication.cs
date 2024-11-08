@@ -239,6 +239,7 @@ public class SerialCommunication : MonoBehaviour
 	    if (!list.Contains(serialPort.SerialNumber))
 	    {
 		    detected = false;
+		    // serialPort.Close();
 		    logConnect.text = "Disconnected!!!" + "\n" + "\n";
 	    }
 	    // }
