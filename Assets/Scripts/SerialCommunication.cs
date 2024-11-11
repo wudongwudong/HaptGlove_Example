@@ -25,18 +25,21 @@ public class SerialCommunication : MonoBehaviour
 	private float detectHandCooldown = 1.0f; // 1 second cooldown
 	private float detectHandTimer = 0f;
 
-	public TMP_Text  logConnect;
+	public TMP_Text logConnect;
+    
+    
+	
 
 	// Use this for initialization
 	void Start ()
 	{
         DetectHand();
+        LogConnectedDeviceList();
 	}
 
     // Update is called once per frame
     void Update ()
-	{
-        
+    {
 		CheckConnection();
 		if (detected == false)
 		{
@@ -150,7 +153,6 @@ public class SerialCommunication : MonoBehaviour
             {
 				Debug.Log("Writing data to right hand: " + BitConverter.ToString(data));
 			}
-            
 			serialPort.Write(data);
 		}
 	}
@@ -221,27 +223,38 @@ public class SerialCommunication : MonoBehaviour
         {
             Debug.Log("VendorID:" + d.Vendor + " DeviceName:" + d.SerialNumber);
         }
+
+
+        // if (detected)
+        // {
+	       //  foreach (SerialPortUtility.SerialPortUtilityPro.DeviceInfo d in devicelist)
+	       //  {
+		      //   connectedDevices.text = " DeviceName:" + d.SerialNumber + "\n";
+	       //  }    
+        // }
+        
+        
     }
 
     public void CheckConnection()
     {
-	    List<string> list = new List<String>();
-	    SerialPortUtility.SerialPortUtilityPro.DeviceInfo[] devicelist =
-		    SerialPortUtility.SerialPortUtilityPro.GetConnectedDeviceList(serialPort.OpenMethod);
-	
-	    // if (serialPort != null)
+	    // List<string> list = new List<String>();
+	    // SerialPortUtility.SerialPortUtilityPro.DeviceInfo[] devicelist =
+		   //  SerialPortUtility.SerialPortUtilityPro.GetConnectedDeviceList(serialPort.OpenMethod);
+	    //
+	    // // if (serialPort != null)
+	    // // {
+	    // foreach (SerialPortUtility.SerialPortUtilityPro.DeviceInfo d in devicelist)
 	    // {
-	    foreach (SerialPortUtility.SerialPortUtilityPro.DeviceInfo d in devicelist)
-	    {
-		    list.Add(d.SerialNumber);
-	    }
-        
-	    if (!list.Contains(serialPort.SerialNumber))
-	    {
-		    detected = false;
-		    // serialPort.Close();
-		    logConnect.text = "Disconnected!!!" + "\n" + "\n";
-	    }
+		   //  list.Add(d.SerialNumber);
+	    // }
+     //    
+	    // if (!list.Contains(serialPort.SerialNumber))
+	    // {
+		   //  detected = false;
+		   //  // serialPort.Close()
+		   //  // logConnect.text = "Disconnected!!!" + "\n" + "\n";
+	    // }
 	    // }
         
     }
@@ -263,7 +276,7 @@ public class SerialCommunication : MonoBehaviour
                     serialPort.ProductID = d.Product;
                     serialPort.SerialNumber = d.SerialNumber;
 					serialPort.Open();
-					logConnect.text = "Hand Detected : " + HaptGlove.whichHand + " serial number " + serialPort.SerialNumber + "\n"; 
+					// logConnect.text = "Hand Detected : " + HaptGlove.whichHand + " serial number " + serialPort.SerialNumber + "\n"; 
 					return true;
 			    }
 		    }
@@ -280,7 +293,7 @@ public class SerialCommunication : MonoBehaviour
                     serialPort.ProductID = d.Product;
                     serialPort.SerialNumber = d.SerialNumber;
                     serialPort.Open();
-                    logConnect.text = "Hand Detected : " + HaptGlove.whichHand + " serial number " + serialPort.SerialNumber + "\n"; 
+                    // logConnect.text = "Hand Detected : " + HaptGlove.whichHand + " serial number " + serialPort.SerialNumber + "\n"; 
 					return true;
 			    }
 		    }
