@@ -18,9 +18,9 @@ public class SerialCommunication : MonoBehaviour
 
 	public HaptGloveHandler HaptGlove;
 
-	public List<string> leftHands = new List<String>{ "02376484", "0237648F" };
+	public List<string> leftHands = new List<String>{ "02376484", "0237648F", "006c656674" };
 	
-	public List<string> rightHands = new List<String> { "023764AC" , "023753EC", "023763EC"};
+	public List<string> rightHands = new List<String> { "023764AC" , "023753EC", "023763EC", "7269676874"};
 	public bool detected = false;
 	private float detectHandCooldown = 1.0f; // 1 second cooldown
 	private float detectHandTimer = 0f;
